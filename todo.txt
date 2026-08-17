@@ -1,0 +1,5 @@
+home page
+- banner image section bg and doctor image
+- contact section banner bg and doctor image
+- Real Stories: My side UI pending
+- 

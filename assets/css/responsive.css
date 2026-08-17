@@ -1,0 +1,604 @@
+@media (max-width: 1100px) {
+    .container {
+        width: min(calc(100% - 32px), var(--container))
+    }
+
+    .nav-icon {
+        display: block;
+    }
+
+    .open-menu {
+        width: 100%;
+    }
+
+    .open-menu header {
+        z-index: 10;
+    }
+
+    .overlay {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 7;
+        background-color: rgba(0, 0, 0, .3);
+        top: 0;
+        left: -100%
+    }
+
+    .open-menu .overlay {
+        left: 0
+    }
+
+    nav {
+        transition: all ease-in-out .3s;
+        left: -300px;
+        top: 0;
+        position: fixed;
+        width: 280px;
+        height: 100vh;
+        background-color: black;
+        z-index: 10;
+        padding-top: 60px;
+        overflow: auto;
+        align-items: flex-start;
+    }
+
+    header.nav-up nav {
+        height: calc(100vh - 44px);
+    }
+
+    .open-menu nav {
+        left: 0;
+    }
+
+    #logo {
+        position: relative;
+        z-index: 12;
+    }
+
+    nav ul {
+        border-top: solid 1px var(--primary-text-color);
+        flex-direction: column;
+        flex: 1;
+        gap: 0;
+    }
+
+    nav ul li {
+        position: relative;
+        display: block;
+        width: 100%;
+        margin: 0;
+        border-bottom: solid 1px var(--green);
+    }
+
+    .largeMenu {
+        position: static;
+    }
+
+    nav ul li a {
+        padding: 7px 10px;
+        color: var(--white);
+        display: block;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        background-color: var(--green);
+        color: var(--white);
+    }
+
+    nav ul li a:before {
+        width: 100%;
+        height: 2px;
+        right: 0;
+        bottom: -2px;
+    }
+
+    nav ul li a.active:before,
+    nav ul li a:hover:before {
+        width: 100%;
+        right: 0;
+    }
+
+    nav>ul>li.openSubmenu a span {
+        border-color: white;
+    }
+
+    .open-menu nav:after {
+        left: 0;
+    }
+
+}
+
+@media(max-width: 1023px) {
+    .container {
+        width: min(calc(100% - 24px), var(--container));
+    }
+
+    .main-nav {
+        gap: 13px
+    }
+
+    .main-nav a {
+        font-size: 11px
+    }
+
+    .nav-cta {
+        padding: 8px 11px;
+        margin: 0 8px 0 0;
+    }
+
+    .hero-grid,
+    .two-col,
+    .appointment-grid {
+        gap: 30px
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .hero h1 {
+        font-size: 32px
+    }
+
+    .condition-grid {
+        grid-template-columns: repeat(3, 1fr)
+    }
+
+    .treatment-grid {
+        grid-template-columns: repeat(3, 1fr)
+    }
+
+    .treatment-card:nth-child(4) {
+        grid-column: auto
+    }
+
+    .expert-grid {
+        grid-template-columns: 180px 1fr 1fr
+    }
+
+    .expert-photo {
+        height: 230px
+    }
+
+    .stats div {
+        padding: 12px
+    }
+
+    .clinic-card {
+        grid-template-columns: 140px 1fr 1fr
+    }
+
+    .footerRight {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 767px) {
+    .section {
+        padding: 30px 0
+    }
+
+    .top-strip {
+        display: none
+    }
+
+    .nav {
+        min-height: 56px
+    }
+
+    .brand img {
+        width: 88px
+    }
+
+    .nav-cta {
+        margin-right: 4px;
+        font-size: 12px;
+    }
+
+    #logo img {
+        max-width: 160px;
+    }
+
+    .hero {
+        padding: 25px 0;
+    }
+
+    .hero-grid,
+    .two-col,
+    .appointment-grid {
+        grid-template-columns: 1fr
+    }
+
+    .hero-grid {
+        gap: 25px
+    }
+
+    .hero h1 {
+        font-size: 34px
+    }
+
+    .hero-visual {
+        min-height: 290px
+    }
+
+    .hero-copy .actions,
+    .trust-banner .actions {
+        flex-direction: column;
+        margin: 0 0 20px 0;
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .trust-banner .actions {
+        margin: 0;
+    }
+
+    .trust-row ul {
+        gap: 8px;
+    }
+
+    .trust-row ul li {
+        padding: 0 6px;
+        ;
+        margin: 0;
+        flex-direction: column !important;
+        text-align: center;
+        gap: 3px;
+    }
+
+    .hero-copy .actions .btn,
+    .trust-banner .actions .btn {
+        min-width: 80%;
+    }
+
+    .photo-frame {
+        width: 100%;
+        margin: auto;
+    }
+
+    .doctor-card h5 {
+        margin: 0 0 3px 0;
+        border-radius: 0 0 8px 8px;
+    }
+
+    .doctor-card {
+        position: static;
+        width: 100%;
+    }
+
+    .about-image {
+        order: -1
+    }
+
+    .about-image img {
+        height: 240px
+    }
+
+    .about-image img.about-image-2 {
+        display: none;
+    }
+
+    h2 {
+        font-size: 23px
+    }
+
+    .condition-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .treatment-grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
+    .treatment-card {
+        min-height: 140px;
+        width: calc(50% - 10px);
+    }
+
+    .treatment-card p {
+        max-width: 100%;
+    }
+
+    .process-grid article:before {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .process-grid article:nth-child(2n):before {
+        display: none;
+    }
+
+    .process-grid article:nth-child(5):before {
+        display: block;
+        /* transform: rotate(110deg); */
+        /* top: -40px; */
+    }
+
+    .treatment-card img {
+        max-height: 80px;
+        max-width: 80px;
+    }
+
+    .expert-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding-top: 25px
+    }
+
+    .expert-photo {
+        width: 180px;
+        height: 210px
+    }
+
+    .expert-copy {
+        padding-bottom: 8px
+    }
+
+    .stats {
+        padding-bottom: 25px
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 42px;
+    }
+
+    .process-grid article:last-child {
+        grid-column: 1/-1
+    }
+
+
+    .trust-banner-inner {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .trust-banner strong {
+        font-size: 16px;
+    }
+
+    .trust-banner p {
+        font-size: 12px;
+    }
+
+    .trust-banner .btn {
+        margin-left: 0;
+    }
+
+    .clinic-card {
+        display: flex;
+        min-height: unset;
+        flex-direction: column;
+        padding: 12px;
+    }
+
+    .clinic-photo img {
+        max-height: 200px;
+        width: 100%
+    }
+
+    .clinic-info {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .map {
+        height: 130px
+    }
+
+    .appointment-grid {
+        padding-top: 10px
+    }
+
+    .appointment-photo {
+        height: 290px;
+        order: -1
+    }
+
+    .appointment-photo img {
+        border-radius: 0 0 0 60px
+    }
+
+    .appointment-form {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .appointment-form button {
+        grid-column: auto;
+        width: 100%
+    }
+
+    .testimonial-grid,
+    .tips-grid {
+        grid-template-columns: 1fr
+    }
+
+    .testimonial.featured {
+        transform: none
+    }
+
+    .mini-trust {
+        border-radius: 8px;
+        width: 100%;
+        border: solid 1px var(--white);
+        padding-right: 12px;
+    }
+
+    .mini-trust ul {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .mini-trust ul li {
+        width: calc(50% - 20px);
+    }
+
+    .mini-trust ul li:nth-child(2n):after {
+        display: none;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr
+    }
+
+    .video-card.large {
+        height: 205px
+    }
+
+    .video-stack {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .video-stack .video-card {
+        height: 115px
+    }
+
+    .bottom-cta-inner {
+        padding: 25px 0;
+        align-items: flex-start;
+        flex-direction: column
+    }
+
+    .bottom-cta .actions {
+        margin: 0
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        padding: 35px 0 16px 0;
+    }
+
+    .footer-brand {
+        grid-column: 1/-1
+    }
+
+    .footer-social .container {
+        flex-wrap: wrap;
+        padding: 9px 0;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .footer-social .push {
+        margin-left: 0;
+        width: 100%
+    }
+
+    .copyright .container {
+        padding: 10px 0;
+        display: block
+    }
+
+    .copyright p {
+        display: block;
+        margin-top: 5px
+    }
+
+    .check-list {
+        margin: 0;
+        gap: 8px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .check-list li {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .causing-main {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .causing-section {
+        margin: 0;
+        min-height: 130px;
+    }
+
+    .section-head.center {
+        max-width: 100%;
+        margin-bottom: 16px;
+    }
+}
+
+@media(max-width: 420px) {
+    .container {
+        width: calc(100% - 24px)
+    }
+
+    .hero h1 {
+        font-size: 29px
+    }
+
+    .hero-visual {
+        min-height: 260px
+    }
+
+    .photo-frame img {
+        height: 260px
+    }
+
+    .trust-row {
+        gap: 8px
+    }
+
+    .actions .btn {
+        flex: 1
+    }
+
+    .treatment-grid {
+        grid-template-columns: 1fr
+    }
+
+    .treatment-card:nth-child(7) {
+        grid-column: auto
+    }
+
+    .condition {
+        min-height: 85px
+    }
+
+    .process-grid article:last-child {
+        grid-column: auto
+    }
+
+    .video-stack {
+        grid-template-columns: 1fr
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr
+    }
+
+    .footerRight {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-social .push {
+        text-align: center;
+    }
+
+    .copyright ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .copyright p {
+        width: 100%;
+        text-align: center;
+    }
+}
