@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/jquery-2.1.1.min.js"></script>
 </head>
 <body>
 
@@ -19,13 +21,12 @@
         </div>
         <div class="nav-wrap">
         <div class="container nav">
-            <a class="brand" href="#">
+          <a id="logo" href="#">
             <img src="assets/images/logo.png" alt="Dr. Saraja's Ayurvedic">
-            </a>
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="menu-btn" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+          </a>
+          <div class="header-links">
             <nav class="main-nav">
-            <ul>
+              <ul>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Our Doctors</a></li>
                 <li><a href="#">Specialites & Treatments</a></li>
@@ -34,9 +35,12 @@
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">Symptoms We Treat</a></li>
-                <li><a class="nav-cta" href="#">Book an Appointment</a></li>
-            </ul>
+              </ul>
             </nav>
+            <a class="nav-cta" href="#">Book an Appointment</a>
+            <div class="nav-icon"><span></span><span></span><span></span></div>
+            <div class="overlay"></div>
+          </div>
         </div>
         </div>
     </header>
@@ -195,7 +199,7 @@
 
     <section class="trust-banner">
       <div class="container trust-banner-inner">
-        <div class="bubble"><md-icon class="material-symbols-outlined">chat</md-icon></div>
+        <div class="bubble"><md-icon class="material-icons">chat</md-icon></div>
         <div><strong>Need Trusted Second Opinion?</strong><p>Not sure about your diagnosis or treatment plan? We’re here to help</p></div>
         <a class="btn btn-light" href="#appointment">Message Us <md-icon class="material-symbols-outlined"><img src="assets/images/whatsapp.png" alt=""></md-icon></a>
       </div>
@@ -213,7 +217,7 @@
             <div class="clinic-info">
                 <h3>Manikonda Branch</h3>
                 <p>Flat No. 302, Abhinandana Jewel, Lanco Hills Road, Opp. HP Gas Godown, Shivapuri Colony, Mup-pas Panchavati Colony, Manikonda, Hyderabad, Telangana - 500089</p>
-                <a href="#appointment" class="btn btn-outline"><md-icon class="material-symbols-outlined">location_on</md-icon>View on Map</a>
+                <a href="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15228.209087044397!2d78.36915103012599!3d17.40927893180823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sFlat%20No.%20302%2C%20Abhinandana%20Jewel%2C%20Lanco%20Hills%20Road%2C%20Opp.%20HP%20Gas%20Godown%2C%20Shivapuri%20Colony%2C%20Mup-pas%20Panchavati%20Colony%2C%20Manikonda%2C%20Hyderabad%2C%20Telangana%20%E2%80%93%20500089!5e0!3m2!1sen!2sin!4v1786886118310!5m2!1sen!2sin" target="_blank" class="btn btn-outline"><md-icon class="material-icons">location_on</md-icon>View on Map</a>
             </div>
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15228.209087044397!2d78.36915103012599!3d17.40927893180823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sFlat%20No.%20302%2C%20Abhinandana%20Jewel%2C%20Lanco%20Hills%20Road%2C%20Opp.%20HP%20Gas%20Godown%2C%20Shivapuri%20Colony%2C%20Mup-pas%20Panchavati%20Colony%2C%20Manikonda%2C%20Hyderabad%2C%20Telangana%20%E2%80%93%20500089!5e0!3m2!1sen!2sin!4v1786886118310!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
@@ -224,7 +228,7 @@
             <div class="clinic-info">
                 <h3>Kukatpally Branch</h3>
                 <p>Metro Pillar No. 817, People's Hospital Complex, 3rd Floor, Beside Narayana Junior College, KPHB, Kukatpally, Hyderabad, Telangana - 500072</p>
-                <a href="#appointment" class="btn btn-outline"><md-icon class="material-symbols-outlined">location_on</md-icon>View on Map</a>
+                <a href="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15221.438439216863!2d78.39217353521202!3d17.490338900425442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sMetro%20Pillar%20No.%20817%2C%20People's%20Hospital%20Complex%2C%203rd%20Floor%2C%20Beside%20Narayana%20Junior%20College%2C%20KPHB%2C%20Kukatpally%2C%20Hyderabad%2C%20Telangana%20-%20500072!5e0!3m2!1sen!2sin!4v1786886172046!5m2!1sen!2sin" target="_blank" class="btn btn-outline"><md-icon class="material-icons">location_on</md-icon>View on Map</a>
             </div>
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d15221.438439216863!2d78.39217353521202!3d17.490338900425442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sMetro%20Pillar%20No.%20817%2C%20People's%20Hospital%20Complex%2C%203rd%20Floor%2C%20Beside%20Narayana%20Junior%20College%2C%20KPHB%2C%20Kukatpally%2C%20Hyderabad%2C%20Telangana%20-%20500072!5e0!3m2!1sen!2sin!4v1786886172046!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
@@ -243,7 +247,7 @@
           <form>
             <ul class="appointment-form">
                 <li><input type="text" placeholder="Your Name"><md-icon class="material-symbols-outlined">person</md-icon></li>
-                <li><input type="tel" placeholder="Phone Number"><md-icon class="material-symbols-outlined">call_log</md-icon></li>
+                <li><input type="tel" placeholder="Your Number"><md-icon class="material-symbols-outlined">call_log</md-icon></li>
                 <li><input type="email" placeholder="Your Email"><md-icon class="material-symbols-outlined">mail</md-icon></li>
                 <li><input type="date"></li>
             </ul>
@@ -305,7 +309,7 @@
                         <h4>No more fissure painExperience safe Ayurvedic healing with Dr. Venkateshwarulu</h4>
                         <p>Dr.sarajas Ayurveda Hospitals</p>
                         <span class="df f1"></span>
-                        <div>599 views &bull; 7 months ago</div>
+                        <div><strong>599</strong> views &bull; 7 months ago</div>
                     </div>
                 </li>
                 <li>
@@ -314,7 +318,7 @@
                         <h4>No more fissure painExperience safe Ayurvedic healing with Dr. Venkateshwarulu</h4>
                         <p>Dr.sarajas Ayurveda Hospitals</p>
                         <span class="df f1"></span>
-                        <div>599 views &bull; 7 months ago</div>
+                        <div><strong>599</strong> views &bull; 7 months ago</div>
                     </div>
                 </li>
                 <li>
@@ -323,7 +327,7 @@
                         <h4>No more fissure painExperience safe Ayurvedic healing with Dr. Venkateshwarulu</h4>
                         <p>Dr.sarajas Ayurveda Hospitals</p>
                         <span class="df f1"></span>
-                        <div>599 views &bull; 7 months ago</div>
+                        <div><strong>599</strong> views &bull; 7 months ago</div>
                     </div>
                 </li>
                 <li>
@@ -332,7 +336,7 @@
                         <h4>No more fissure painExperience safe Ayurvedic healing with Dr. Venkateshwarulu</h4>
                         <p>Dr.sarajas Ayurveda Hospitals</p>
                         <span class="df f1"></span>
-                        <div>599 views &bull; 7 months ago</div>
+                        <div><strong>599</strong> views &bull; 7 months ago</div>
                     </div>
                 </li>
             </ul>
@@ -480,8 +484,13 @@
                 <li><a href="#">Careers</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-            <span>© 2026 All Rights Reserved.</span></div>
+            <p>© <span id="yearUpdate"></span> All Rights Reserved.</p></div>
       </div>
   </footer>
+
+  <a href="javascript:void(0)" class="back-to-top" onclick="$('html,body').animate({scrollTop:0},500);"></a>
+  <script src="assets/js/global.js"></script>
+
+
 </body>
 </html>
