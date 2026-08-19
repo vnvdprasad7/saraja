@@ -1,7 +1,20 @@
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
     .container {
-        width: min(calc(100% - 32px), var(--container))
+        width: min(calc(100% - 32px), var(--container));
     }
+
+    nav ul {
+        gap: 8px;
+    }
+
+    .nav-cta {
+        padding: 8px 10px;
+        margin-left: 10px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1100px) {
 
     .nav-icon {
         display: block;
@@ -39,7 +52,7 @@
         height: 100vh;
         background-color: black;
         z-index: 10;
-        padding-top: 60px;
+        padding-top: 90px;
         overflow: auto;
         align-items: flex-start;
     }
@@ -55,6 +68,14 @@
     #logo {
         position: relative;
         z-index: 12;
+    }
+
+    #logo img {
+        max-width: 160px;
+    }
+
+    .nav {
+        min-height: unset;
     }
 
     nav ul {
@@ -79,7 +100,9 @@
     nav ul li a {
         padding: 7px 10px;
         color: var(--white);
-        display: block;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
     }
 
     nav ul li a:hover,
@@ -109,6 +132,16 @@
         left: 0;
     }
 
+    .testimonials .section-head {
+        max-width: 340px;
+        min-width: 340px;
+        margin-right: 40px;
+    }
+
+    .testimonial-grid {
+        width: calc(100% - 360px);
+    }
+
 }
 
 @media(max-width: 1023px) {
@@ -116,8 +149,10 @@
         width: min(calc(100% - 24px), var(--container));
     }
 
+
     .main-nav {
-        gap: 13px
+        gap: 13px;
+
     }
 
     .main-nav a {
@@ -140,7 +175,13 @@
     }
 
     .hero h1 {
-        font-size: 32px
+        font-size: 32px;
+        margin-bottom: 12px;
+        margin-bottom: 10px;
+    }
+
+    .hero-copy>p {
+        width: 100%;
     }
 
     .condition-grid {
@@ -181,12 +222,24 @@
         padding: 30px 0
     }
 
+    h2 {
+        font-size: 18px
+    }
+
+    .actions {
+        margin: 10px 0;
+    }
+
     .top-strip {
         display: none
     }
 
     .nav {
         min-height: 56px
+    }
+
+    .main-nav {
+        padding-top: 70px;
     }
 
     .brand img {
@@ -196,10 +249,6 @@
     .nav-cta {
         margin-right: 4px;
         font-size: 12px;
-    }
-
-    #logo img {
-        max-width: 160px;
     }
 
     .hero {
@@ -217,7 +266,7 @@
     }
 
     .hero h1 {
-        font-size: 34px
+        font-size: 28px
     }
 
     .hero-visual {
@@ -237,13 +286,17 @@
         margin: 0;
     }
 
+    .trust-row {
+        margin-top: 12px;
+    }
+
     .trust-row ul {
-        gap: 8px;
+        justify-content: center;
+        width: 100%;
     }
 
     .trust-row ul li {
-        padding: 0 6px;
-        ;
+        padding: 0 8px !important;
         margin: 0;
         flex-direction: column !important;
         text-align: center;
@@ -268,6 +321,7 @@
     .doctor-card {
         position: static;
         width: 100%;
+        border-radius: 0 0 10px 10px;
     }
 
     .about-image {
@@ -282,9 +336,6 @@
         display: none;
     }
 
-    h2 {
-        font-size: 23px
-    }
 
     .condition-grid {
         grid-template-columns: repeat(2, 1fr)
@@ -335,10 +386,6 @@
     .expert-photo {
         width: 180px;
         height: 210px
-    }
-
-    .expert-copy {
-        padding-bottom: 8px
     }
 
     .stats {
@@ -431,7 +478,6 @@
     .mini-trust {
         border-radius: 8px;
         width: 100%;
-        border: solid 1px var(--white);
         padding-right: 12px;
     }
 
@@ -533,6 +579,44 @@
         max-width: 100%;
         margin-bottom: 16px;
     }
+
+    .expert {
+        background: var(--white);
+    }
+
+    .appointment {
+        background: var(--cream);
+    }
+
+    .appointment-copy h2 {
+        font-size: 24px;
+    }
+
+    .testimonials .container {
+        flex-direction: column;
+    }
+
+    .testimonials .section-head {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .testimonial-grid {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .testimonial {
+        min-height: max-content;
+    }
+
+    .back-to-top {
+        transform: scale(0.7);
+    }
+
+    .why-choose-us ul {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media(max-width: 420px) {
@@ -540,16 +624,8 @@
         width: calc(100% - 24px)
     }
 
-    .hero h1 {
-        font-size: 29px
-    }
-
     .hero-visual {
         min-height: 260px
-    }
-
-    .photo-frame img {
-        height: 260px
     }
 
     .trust-row {
