@@ -580,12 +580,16 @@
         margin-bottom: 16px;
     }
 
+    .expert-copy p {
+        max-width: 260px;
+    }
+    .appointment,
     .expert {
-        background: var(--white);
+        background-size: auto 130%;
     }
 
-    .appointment {
-        background: var(--cream);
+    .appointment-copy>p {
+        max-width: 280px;
     }
 
     .appointment-copy h2 {
