@@ -251,11 +251,22 @@ ul {
     color: var(--white) !important;
 }
 
+.white-bg {
+    background: var(--white) !important;
+}
+
+.width100 {
+    width: 100% !important;
+}
+
+.maxwidth100 {
+    max-width: 100% !important;
+}
+
 .container {
     width: min(calc(100% - 48px), var(--container));
     margin: auto
 }
-
 
 .slick-slider .slick-dots li {
     font-size: 0;
@@ -316,8 +327,6 @@ ul {
     transform: rotate(135deg);
     left: 3px;
 }
-
-
 
 .top-strip {
     background: linear-gradient(45deg, #1DAD5A, var(--dark));
@@ -1082,7 +1091,6 @@ p.about-address md-icon {
     box-shadow: 0 2px 9px rgba(0, 0, 0, .15);
     transform: translateY(-3px);
     border-color: var(--gold);
-
 }
 
 .process-grid article:hover i {
@@ -1241,7 +1249,6 @@ p.about-address md-icon {
     line-height: 1.5;
     margin-bottom: 6px;
 }
-
 
 .map {
     background: linear-gradient(135deg, #e7ebeb, #f6f7f4);
@@ -1462,7 +1469,6 @@ p.about-address md-icon {
     margin: 60px 0 0 0;
     padding: 0 20px;
     width: calc(100% - 400px);
-
 }
 
 .testimonial {
@@ -2027,7 +2033,6 @@ p.about-address md-icon {
 }
 
 /*========== Mobile Menu Icon Ends ==========*/
-
 /*========== Back To Top Starts ==========*/
 .back-to-top {
     display: none;
@@ -2095,7 +2100,6 @@ p.about-address md-icon {
 }
 
 /*========== Back To Top Ends ==========*/
-
 /* Home Page  */
 .about-banner .hero-grid {
     grid-template-columns: 1fr .95fr;
@@ -2108,9 +2112,13 @@ p.about-address md-icon {
     margin: 0 0 26px 0;
 }
 
+.why-choose-us .actions {
+    margin-bottom: 0;
+}
+
 .wcuSection {
     background: var(--white);
-    border: solid 1px var(--cream);
+    border: solid 1px var(--grey);
     border-radius: 10px;
     padding: 16px;
     display: flex;
@@ -2142,7 +2150,6 @@ p.about-address md-icon {
     display: flex;
 }
 
-
 .why-choose-us ul * {
     transition: ease-in-out 0.3s all;
 }
@@ -2155,6 +2162,8 @@ p.about-address md-icon {
 
 .why-choose-us ul li p {
     color: unset;
+    margin-top: 4px;
+    line-height: 18px;
 }
 
 .visionary-founder .container {
@@ -2592,15 +2601,27 @@ p.about-address md-icon {
 }
 
 .treatment-work ul li small {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 40px;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 48px;
     background-color: var(--white);
     color: var(--black);
     text-align: center;
     font-size: 18px;
     border: solid 1px var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.treatment-work ul li small md-icon {
+    font-size: 26px;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    color: var(--gold);
+    font-weight: 400;
 }
 
 .treatment-work ul li span {
@@ -2620,7 +2641,7 @@ p.about-address md-icon {
     border: dashed 1px var(--gold);
     position: absolute;
     left: 2px;
-    top: 19px;
+    top: 25px;
     width: 100%;
     z-index: -1;
 }
@@ -2642,6 +2663,8 @@ p.about-address md-icon {
 
 .our-team-list ul li {
     width: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
 }
 
 .our-team-list-items {
@@ -2651,12 +2674,14 @@ p.about-address md-icon {
     border-radius: 12px;
     padding: 12px;
     box-shadow: var(--shadow);
+    flex: 1;
 }
 
 .our-team-list-top {
     display: flex;
     flex-direction: row;
     gap: 12px;
+    flex: 1;
 }
 
 .our-team-list-top img {
@@ -2687,4 +2712,122 @@ p.about-address md-icon {
 
 .our-team-list-items .actions {
     margin-bottom: 0;
+}
+
+.about-about .container {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    gap: 30px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+.about-about .about-image img {
+    height: unset;
+    max-height: 100%;
+}
+
+.about-about .about-image span {
+    position: absolute;
+    bottom: 20px;
+    left: -20px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-color: var(--white);
+    border: solid 2px var(--green);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    line-height: 20px;
+    justify-content: center;
+    box-shadow: 0 0 7px 0px var(--green);
+}
+
+.about-about .about-image {
+    position: relative;
+    border-radius: 20px;
+}
+
+.about-about .about-image span strong {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.about-about ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.about-about ul li {
+    display: flex;
+    /* min-width: calc(50% - 10px); */
+}
+
+.about-about ul md-icon {
+    font-size: 20px;
+}
+
+.meet-specialists-list>ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.meet-specialists-list>ul>li {
+    width: calc(50% - 10px);
+}
+
+.meet-specialists-items {
+    display: flex;
+    flex-direction: row;
+    border: solid 1px var(--grey);
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: var(--shadow);
+    flex: 1;
+    gap: 20px;
+    background: var(--white);
+}
+
+.meet-specialists-img {
+    min-width: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.meet-specialists-img img {
+    width: 100%;
+}
+
+.meet-specialists-items h6 {
+    font-size: 16px;
+    margin: 10px 0 0 0;
+}
+
+.meet-specialists-items small {
+    font-size: 12px;
+    margin: 8px 0;
+}
+
+.meet-specialists-items ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 13px;
+    margin: 4px 0 0 26px;
+}
+
+.meet-specialists-items ul li {
+    list-style-type: disclosure-closed;
+}
+
+.meet-specialists {
+    background: rgb(229, 243, 255);
 }

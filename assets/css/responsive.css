@@ -139,7 +139,7 @@
     }
 
     .testimonial-grid {
-        width: calc(100% - 360px);
+        width: calc(100% - 390px);
     }
 
     .expertise-slider {
@@ -154,6 +154,10 @@
 @media(max-width: 1023px) {
     .container {
         width: min(calc(100% - 24px), var(--container));
+    }
+
+    .section {
+        padding: 45px 0
     }
 
     .section-head.center {
@@ -240,6 +244,10 @@
         width: 100%;
     }
 
+    .meet-specialists-items {
+        flex-direction: column;
+        gap: 10px;
+    }
    
 }
 
@@ -661,20 +669,34 @@
     .experience-container {
         grid-template-columns: none;
     }
+    .treatment-work .section-head.left{
+        text-align: center;
+    }
     .treatment-work ul {
         flex-wrap: wrap;
         margin-top: 20px;
     }
     .treatment-work ul li {
-        margin-bottom: 20px;
         width: 50%;
+        text-align: center;
+        margin-top: 16px !important;
+    }
+    .treatment-work ul li small {
+        margin: 0 auto;
     }
     .treatment-work ul li:last-child {
-        margin-bottom: 0;
+        margin: 0 auto 0;
+    }
+    .treatment-work ul li:before {
+        left: 50%;
+    }
+    .treatment-work ul li:nth-child(2n):before {
+        display: none;
     }
     .treatment-work .section-head p {
         max-width: 100%;
     }
+    
     .about-banner .hero-grid {
         grid-template-columns: auto;
     }
@@ -704,6 +726,22 @@
     .our-team-list-top {
         flex-direction: column;
     }
+    .about-about .container {
+        grid-template-columns: unset;
+        padding: 0;
+    }
+    .about-about .about-image {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .about-about ul {
+        margin-top: 10px;
+        gap: 8px;
+    }
+    .meet-specialists-list>ul>li {
+        width: 100%;
+    }
+    
 }
 
 @media(max-width: 420px) {
