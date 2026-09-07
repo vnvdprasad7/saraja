@@ -1,0 +1,1079 @@
+@media (max-width: 1200px) {
+    .container {
+        width: min(calc(100% - 32px), var(--container));
+    }
+
+    nav ul {
+        gap: 8px;
+    }
+
+    .nav-cta {
+        padding: 8px 10px;
+        margin-left: 10px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .nav-icon {
+        display: block;
+    }
+
+    .open-menu {
+        width: 100%;
+    }
+
+    .open-menu header {
+        z-index: 10;
+    }
+
+    .overlay {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 7;
+        background-color: rgba(0, 0, 0, .3);
+        top: 0;
+        left: -100%
+    }
+
+    .open-menu .overlay {
+        left: 0
+    }
+
+    nav {
+        transition: all ease-in-out .3s;
+        left: -300px;
+        top: 0;
+        position: fixed;
+        width: 280px;
+        height: 100vh;
+        background-color: black;
+        z-index: 10;
+        padding-top: 90px;
+        overflow: auto;
+        align-items: flex-start;
+    }
+
+    header.nav-up nav {
+        height: calc(100vh - 44px);
+    }
+
+    .open-menu nav {
+        left: 0;
+    }
+
+    #logo {
+        position: relative;
+        z-index: 12;
+    }
+
+    #logo img {
+        max-width: 160px;
+    }
+
+    .nav {
+        min-height: unset;
+    }
+
+    nav ul {
+        border-top: solid 1px var(--primary-text-color);
+        flex-direction: column;
+        flex: 1;
+        gap: 0;
+        overflow: auto;
+        max-height: 100%;
+    }
+
+    nav ul li {
+        position: relative;
+        display: block;
+        width: 100%;
+        margin: 0;
+        border-bottom: solid 1px var(--green);
+    }
+
+    .largeMenu {
+        position: static;
+    }
+
+    nav ul li a {
+        padding: 7px 10px;
+        color: var(--white);
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        background-color: var(--green);
+        color: var(--white);
+    }
+
+    nav ul li a:before {
+        width: 100%;
+        height: 2px;
+        right: 0;
+        bottom: -2px;
+    }
+
+    nav ul li a.active:before,
+    nav ul li a:hover:before {
+        width: 100%;
+        right: 0;
+    }
+
+    nav>ul>li.openSubmenu a span {
+        border-color: white;
+    }
+
+    .open-menu nav:after {
+        left: 0;
+    }
+
+    .testimonials .section-head {
+        max-width: 340px;
+        min-width: 340px;
+        margin-right: 40px;
+    }
+
+    .testimonial-grid {
+        width: calc(100% - 390px);
+    }
+
+    .expertise-slider {
+        max-width: 100%;
+    }
+
+    .experience-container {
+        grid-template-columns: 1fr 40%;
+    }
+
+    .drop-down-toggle {
+        position: absolute;
+        right: 6px;
+        top: 4px;
+        background: var(--white);
+        color: var(
+        --green);
+        border-radius: 2px;
+        box-shadow: var(--shadow);
+    }
+
+    .sub-nav {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-right: 0;
+    }
+
+    .sub-nav-list h4 {
+        width: 100%;
+    }
+
+    .sub-nav-list ul a {
+        color: unset;
+    }
+
+    .drop-down-toggle.active {
+        transform: rotate(180deg);
+    }
+
+}
+
+@media(max-width: 1023px) {
+    .container {
+        width: min(calc(100% - 24px), var(--container));
+    }
+
+    .section {
+        padding: 45px 0
+    }
+
+    .section-head.center {
+        max-width: 100%;
+    }
+
+    .main-nav {
+        gap: 13px;
+
+    }
+
+    .main-nav a {
+        font-size: 11px
+    }
+
+    .nav-cta {
+        padding: 8px 11px;
+        margin: 0 8px 0 0;
+    }
+
+    .hero-grid,
+    .two-col,
+    .appointment-grid {
+        gap: 30px
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        margin-bottom: 12px;
+        margin-bottom: 10px;
+    }
+
+    .hero-copy>p {
+        width: 100%;
+    }
+
+    .condition-grid {
+        grid-template-columns: repeat(3, 1fr)
+    }
+
+    .treatment-grid {
+        grid-template-columns: repeat(3, 1fr)
+    }
+
+    .treatment-card:nth-child(4) {
+        grid-column: auto
+    }
+
+    .expert-grid {
+        grid-template-columns: 180px 1fr 1fr
+    }
+
+    .expert-photo {
+        height: 230px
+    }
+
+    .stats div {
+        padding: 12px
+    }
+
+    .clinic-card {
+        grid-template-columns: 140px 1fr 1fr
+    }
+
+    .footerRight {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .visionary-founder .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .visionary-founder-right {
+        display: none;
+    }
+
+    .treatment ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .our-team-list ul li {
+        width: 100%;
+    }
+
+    .meet-specialists-items {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .banner-image-layer .container {
+        background-color: rgb(191 183 183 / 94%);
+        border-radius: 20px;
+        padding: 20px;
+        grid-template-columns: unset;
+    }    
+    .banner-image-layer .trust-row {
+        color: var(--black);
+    }
+    .banner-image-layer .trust-row ul li {
+        border-color: var(--black);
+    }
+    .banner-image-layer .eyebrow,
+    .trust-row-icon md-icon {
+        color: var(--green);
+    }
+    .doctor-inner-banner-content.two-col {
+        grid-template-columns: 300px 1fr;
+    }
+    .doctor-inner-banner-text ul {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .doctor-inner-banner-text ul li {
+        min-width:200px;
+    }
+
+    .dd-about-doctor .container.two-col {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .dd-about-experience-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+    .dd-about-experience-list-item {
+        width: 100%;
+    }
+    .piles-symptoms .two-col {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .fissure-about .container {
+        gap: 30px;
+    }
+    .common-factors-pills-list {
+        max-width: 100%;
+    }
+    .why-choose-us ul {
+        grid-template-columns: 1fr 1fr;
+    }
+    .traditional-healing .two-col {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .traditional-healing .copy {
+        padding: 30px;
+    }
+    .modern-laser-surgery .container {
+        grid-template-columns: 0.8fr 1fr;
+    }
+    .articles-slider-item {
+        margin: 0 10px;
+    }
+    .fissure-common-symptoms ul {
+        width: 100%;
+    }
+    .fissure-common-symptoms ul li {
+        width: calc(25% - 12px);
+    }
+    .personalized-ayurvedic-care-5cards ul {
+        justify-content: center;
+    }
+    .personalized-ayurvedic-care-5cards ul li {
+        width: calc(33.33% - 14px);
+    }
+    .types-rectal-prolapse {
+        width: 100%;
+    }
+    .ksharasutra-considered ul {
+        padding-top: 0;
+    }
+    .ksharasutra-considered ul li {
+        width: calc(50% - 16px);
+    }
+}
+
+@media(max-width: 767px) {
+    .section {
+        padding: 30px 0
+    }
+
+    h2 {
+        font-size: 18px
+    }
+
+    .actions {
+        margin: 10px 0;
+    }
+
+    .top-strip {
+        display: none
+    }
+
+    .nav {
+        min-height: 56px
+    }
+
+    .main-nav {
+        padding-top: 70px;
+    }
+
+    .brand img {
+        width: 88px
+    }
+
+    .nav-cta {
+        margin-right: 4px;
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 25px 0;
+    }
+
+    .hero-grid,
+    .two-col,
+    .appointment-grid {
+        grid-template-columns: 1fr
+    }
+
+    .hero-grid {
+        gap: 25px
+    }
+
+    .hero h1 {
+        font-size: 28px
+    }
+
+    .hero-visual {
+        min-height: 290px
+    }
+
+    .hero-copy .actions,
+    .trust-banner .actions {
+        flex-direction: column;
+        margin: 0 0 20px 0;
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .trust-banner .actions {
+        margin: 0;
+    }
+
+    .trust-row {
+        margin-top: 12px;
+    }
+
+    .trust-row ul {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .trust-row ul li {
+        padding: 0 8px !important;
+        margin: 0;
+        flex-direction: column !important;
+        text-align: center;
+        gap: 3px;
+    }
+
+    .hero-copy .actions .btn,
+    .trust-banner .actions .btn {
+        min-width: 80%;
+    }
+
+    .photo-frame {
+        width: 100%;
+        margin: auto;
+    }
+
+    .doctor-card h5 {
+        margin: 0 0 3px 0;
+        border-radius: 0 0 8px 8px;
+    }
+
+    .doctor-card {
+        position: static;
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .about-image {
+        order: -1
+    }
+
+    .about-image img {
+        height: 240px
+    }
+
+    .about-image img.about-image-2 {
+        display: none;
+    }
+
+
+    .condition-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .treatment-grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
+    .treatment-card {
+        min-height: 140px;
+        width: calc(50% - 10px);
+    }
+
+    .treatment-card p {
+        max-width: 100%;
+    }
+
+    .process-grid article:before {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .process-grid article:nth-child(2n):before {
+        display: none;
+    }
+
+    .process-grid article:nth-child(5):before {
+        display: block;
+        /* transform: rotate(110deg); */
+        /* top: -40px; */
+    }
+
+    .treatment-card img {
+        max-height: 80px;
+        max-width: 80px;
+    }
+
+    .expert-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding-top: 25px
+    }
+
+    .expert-photo {
+        width: 180px;
+        height: 210px
+    }
+
+    .stats {
+        padding-bottom: 25px
+    }
+
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 42px;
+    }
+
+    .process-grid article:last-child {
+        grid-column: 1/-1
+    }
+
+
+    .trust-banner-inner {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .trust-banner strong {
+        font-size: 16px;
+    }
+
+    .trust-banner p {
+        font-size: 12px;
+    }
+
+    .trust-banner .btn {
+        margin-left: 0;
+    }
+
+    .clinic-card {
+        display: flex;
+        min-height: unset;
+        flex-direction: column;
+        padding: 12px;
+    }
+
+    .clinic-photo img {
+        max-height: 200px;
+        width: 100%
+    }
+
+    .clinic-info {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .map {
+        height: 130px
+    }
+
+    .appointment-grid {
+        padding-top: 10px
+    }
+
+    .appointment-photo {
+        height: 290px;
+        order: -1
+    }
+
+    .appointment-photo img {
+        border-radius: 0 0 0 60px
+    }
+
+    .appointment-form {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .appointment-form button {
+        grid-column: auto;
+        width: 100%
+    }
+
+    .testimonial-grid,
+    .tips-grid {
+        grid-template-columns: 1fr
+    }
+
+    .testimonial.featured {
+        transform: none
+    }
+
+    .mini-trust {
+        border-radius: 8px;
+        width: 100%;
+        padding-right: 12px;
+    }
+
+    .mini-trust ul {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .mini-trust ul li {
+        width: calc(50% - 20px);
+    }
+
+    .mini-trust ul li:nth-child(2n):after {
+        display: none;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr
+    }
+
+    .video-card.large {
+        height: 205px
+    }
+
+    .video-stack {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .video-stack .video-card {
+        height: 115px
+    }
+
+    .bottom-cta-inner {
+        padding: 25px 0;
+        align-items: flex-start;
+        flex-direction: column
+    }
+
+    .bottom-cta .actions {
+        margin: 0
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        padding: 35px 0 16px 0;
+    }
+
+    .footer-brand {
+        grid-column: 1/-1
+    }
+
+    .footer-social .container {
+        flex-wrap: wrap;
+        padding: 9px 0;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .footer-social .push {
+        margin-left: 0;
+        width: 100%
+    }
+
+    .copyright .container {
+        padding: 10px 0;
+        display: block
+    }
+
+    .copyright p {
+        display: block;
+        margin-top: 5px
+    }
+
+    .check-list {
+        gap: 8px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .check-list li {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .causing-main {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .causing-section {
+        margin: 0;
+        min-height: 130px;
+    }
+
+    .section-head.center {
+        max-width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .expert-copy p {
+        max-width: 260px;
+    }
+
+    .expert {
+        background-size: auto 130%;
+    }
+
+    .appointment {        
+        background-position-x: 84%;
+    }
+
+    .appointment:after {
+        background-color: rgba(0, 0, 0, 0.64);
+    }
+
+    .appointment-copy {
+        color: var(--white);
+    }
+
+    .appointment-copy .eyebrow,
+    .appointment-copy h2,
+    .appointment-copy p {
+        color: unset;
+    }
+
+    .appointment-copy>p {
+        max-width: 280px;
+    }
+
+    .appointment-copy h2 {
+        font-size: 24px;
+    }
+
+    .testimonials .container {
+        flex-direction: column;
+    }
+
+    .testimonials .section-head {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .testimonial-grid {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .testimonial {
+        min-height: max-content;
+    }
+
+    .back-to-top {
+        transform: scale(0.7);
+    }
+
+    .why-choose-us ul {
+        grid-template-columns: 1fr;
+    }
+
+    .visionary-founder-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .expertise-slider .slick-slider .slick-next,
+    .expertise-slider .slick-slider .slick-prev {
+        top: 40%;
+    }
+
+    .treatment ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .experience-container {
+        grid-template-columns: none;
+    }
+
+    .treatment-work .section-head.left {
+        text-align: center;
+    }
+
+    .treatment-work ul {
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .treatment-work ul li {
+        width: 50%;
+        text-align: center;
+        margin-top: 16px !important;
+    }
+
+    .treatment-work ul li small {
+        margin: 0 auto;
+    }
+
+    .treatment-work ul li:last-child {
+        margin: 0 auto 0;
+    }
+
+    .treatment-work ul li:before {
+        left: 50%;
+    }
+
+    .treatment-work ul li:nth-child(2n):before {
+        display: none;
+    }
+
+    .treatment-work .section-head p {
+        max-width: 100%;
+    }
+
+    .about-banner .hero-grid {
+        grid-template-columns: auto;
+    }
+
+    .doctors-banner {
+        background-position-x: right;
+        position: relative;
+        z-index: 1;
+    }
+
+    .doctors-banner:after {
+        background-color: rgba(0, 0, 0, 0.65);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        z-index: -1;
+    }
+ 
+
+    .our-team-list-top {
+        flex-direction: column;
+    }
+
+    .about-about .container {
+        grid-template-columns: unset;
+        padding: 0;
+    }
+
+    .about-about .about-image {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .about-about ul {
+        margin-top: 10px;
+        gap: 8px;
+    }
+
+    .meet-specialists-list>ul>li {
+        width: 100%;
+    }
+    .about-page-info .two-col {
+        grid-template-columns: unset;
+    }
+    .about-image {
+        display: none;
+    }
+    .doctor-inner-banner-content.two-col {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .doctor-inner-banner-text ul li {
+        width: 100%;
+    }
+    .doctor-inner-banner-text ul {
+        margin: 0 0 16px 0;
+    }
+    .dd-about-experience-list-item {
+        padding: 20px;
+    }
+    .dd-about-experience-list-item h2 md-icon {
+        font-size: 30px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .articles-slider-item {
+        margin: 0;
+    }
+    .doctor-inner-banner-img {
+        margin: 0 auto;
+    }
+    .feature-icon {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+    }
+    section.doctor-inner-banner {
+     padding: 20px 0; 
+    }
+    .piles-symptoms ul li {
+        width: calc(50% - 12px);
+    }
+    .piles-symptoms-copy {
+        margin-top: 20px;
+    }
+    .piles-treatments {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .piles-treatments .articles-slider-item {
+        width: calc(50% - 8px);
+    }
+    .common-factors-pills-list {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .common-factors-pills-list ul:first-child:after {
+        background: linear-gradient( to right, transparent 10%, #c8c8c8 40%, #a9a9a9 40%, #c8c8c8 60%, transparent 100% );
+        width: 100%;
+        height: 1px;
+        right: 0;
+        bottom: -15px;
+    }
+
+    .ayuvedic-tratmenmts .our-appointment-form {
+        max-width: 260px;
+        margin: 0 auto;
+    }
+    .feature-item {
+        margin-top: 20px;
+    }
+    .modern-laser-surgery .about-image {
+        display: block;
+        max-width: 260px;
+        margin: 0 auto;
+    }
+    .traditional-healing .our-help-info {
+        padding: 20px;
+    }
+    .traditional-healing .copy {
+        padding: 10px 20px;
+    }
+    .personalized-ayurvedic-care ul li {
+        width: calc(50% - 15px);
+        padding-bottom: 90px;
+    }
+    .personalized-ayurvedic-care ul li img {
+        max-height: 80px;
+        max-width: 90px;
+    }
+    .fissure-common-symptoms ul li {
+        width: calc(50% - 8px);
+    }
+    .unserstanding-diffetence .two-col {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .rectal-signs-symptoms-content ul {
+        gap: 16px;
+    }
+    .rectal-signs-symptoms-content ul li {
+        width: calc(50% - 8px);
+    }
+    .rectal-signs-symptoms-content ul li span {
+        min-height: 36px;
+    }
+    .types-rectal-prolapse .articles-slider-item {
+        margin: 0;
+    }
+    .accurate-assessment-care ul li {
+        width: calc(50% - 8px);
+    }
+    .accurate-assessment-care ul {
+        gap: 16px;
+    }
+    .ksharasutra-considered ul li {
+        padding: 12px;
+    }
+    .ksharasutraSection {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
+
+@media(max-width: 420px) {
+    .container {
+        width: calc(100% - 24px)
+    }
+
+    wcu-icon-1 .hero-visual {
+        min-height: 260px
+    }
+
+    .trust-row {
+        gap: 8px
+    }
+
+    .actions .btn {
+        flex: 1
+    }
+
+    .treatment-grid {
+        grid-template-columns: 1fr
+    }
+
+    .treatment-card:nth-child(7) {
+        grid-column: auto
+    }
+
+    .condition {
+        min-height: 85px
+    }
+
+    .process-grid article:last-child {
+        grid-column: auto
+    }
+
+    .video-stack {
+        grid-template-columns: 1fr
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr
+    }
+
+    .footerRight {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-social .push {
+        text-align: center;
+    }
+
+    .copyright ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .copyright p {
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,32 @@
+Pages
+    - Home
+    - About Us kukatpally
+    - About Us 2 pending
+    - Doctors
+    - Doctor . details
+    - Specialites & Treatments
+
+        => Treatments 
+            . Pilles
+            . Fistula
+            . Fissure
+            . Pilonidal Sinus
+            . Perianal Abscess
+            . Rectal Prolapse
+
+        => Ayurvedic Treatments
+            . Ksharasutra Therapy -> Desktop banner shade issue
+            . MCDPA 
+            . Ayurvedic Medicines
+
+    - 
+
+
+
+Git:
+
+git add .
+
+git status
+
+git commit -m "Add website files"
