@@ -209,6 +209,12 @@ ul {
     margin: auto !important;
 }
 
+.pt-0 {
+    padding-top: 0 !important;
+}
+.pb-0 {
+    padding-bottom: 0 !important;
+}
 .mt-0 {
     margin-top: 0 !important;
 }
@@ -293,6 +299,26 @@ ul {
     width: min(calc(100% - 48px), var(--container));
     margin: auto
 }
+
+.info {
+    padding: 12px;
+    color: #FF0000;
+    background-color: #FFF3E8;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.info md-icon {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 18px;
+}
+
 
 .slick-slider .slick-dots li {
     font-size: 0;
@@ -1164,6 +1190,10 @@ p.about-address md-icon {
     background-repeat: repeat no-repeat;
     padding-top: 45px;
     padding-bottom: 90px;
+}
+
+.process-grid.process-grid4 {
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .process-grid {
@@ -4269,6 +4299,7 @@ dd-about-doctor .container {}
     border-radius: 12px;
     padding: 24px;
     font-size: 14px;
+    box-shadow: var(--shadow);
 }
 
 .dos-donots-list ul {
@@ -4283,6 +4314,7 @@ dd-about-doctor .container {}
 .dos-donots-list div:nth-child(2) {
     background: #FFA4A4;
 }
+
 .dos-donots-list h3 {
     display: flex;
     align-items: center;
@@ -4295,4 +4327,180 @@ dd-about-doctor .container {}
 
 .dos-donots-list div:nth-child(2) h3 md-icon {
     color: #ff0303;
+}
+
+.laser-treatment-considered .container {
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+
+.laser-treatment-considered ul {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    gap: 20px;
+}
+
+.laser-treatment-considered ul md-icon {
+    color: var(--green2);
+    margin-right: 4px;
+}
+
+.laser-treatment-considered ul p {
+    margin-bottom: 0;
+}
+
+/* Table wrapper */
+.comparison-table-wrapper {
+    width: 80%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 auto;
+}
+
+/* Table */
+.comparison-table {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #dddddd;
+    border-radius: 7px;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+/* Header */
+.comparison-table thead th {
+    background: #07552f;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: left;
+    padding: 8px 10px;
+    height: 28px;
+    border: none;
+    white-space: nowrap;
+}
+
+.comparison-table thead th:first-child {
+    width: 22%;
+}
+
+.comparison-table thead th:nth-child(2),
+.comparison-table thead th:nth-child(3) {
+    width: 39%;
+}
+
+/* Rounded header corners */
+.comparison-table thead th:first-child {
+    border-top-left-radius: 6px;
+}
+
+.comparison-table thead th:last-child {
+    border-top-right-radius: 6px;
+}
+
+/* Body cells */
+.comparison-table tbody td {
+    padding: 8px 10px;
+    height: 27px;
+    border-top: 1px solid #e4e4e4;
+    color: #222222;
+    vertical-align: middle;
+    line-height: 1.3;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+/* First column */
+.comparison-table tbody td:first-child {
+    color: #222222;
+    font-weight: 400;
+}
+
+/* Last row bottom */
+.comparison-table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 6px;
+}
+
+.comparison-table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 6px;
+}
+
+.fistula-treatment-steps ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.fistula-treatment-steps ul li {
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.fistula-treatmentSection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.fistula-treatment-num {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border: solid 1px var(--grey);
+    border-radius: 100px;
+    text-align: center;
+    color: black;
+    background-color: var(--white);
+}
+
+.fistula-treatment-content {
+    display: flex;
+    flex: 1;
+    border: solid 1px var(--grey);
+    border-radius: 8px;
+    flex-direction: column;
+    padding: 10px 16px;
+}
+
+.fistula-treatment-content h4 {
+    margin: 0;
+}
+
+.fistula-treatment-content p {
+    margin: 0;
+}
+
+.fistula-treatment-num:before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: var(--grey);
+    display: block;
+    position: absolute;
+    left: 29px;
+    top: 50%;
+    z-index: -1;
+}
+
+.fistula-treatment-steps ul li:last-child .fistula-treatment-num:before {
+    opacity: 0;
+}
+
+.actual-chronic .dos-donots-list {
+    width: 90%;
+}
+
+.actual-chronic .dos-donots-list div {
+    background-color: var(--white);
+}
+
+.actual-chronic .dos-donots-list div:nth-child(2) {
+    background-color: #DBFFEA;
 }
