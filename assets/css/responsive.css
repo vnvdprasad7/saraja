@@ -180,6 +180,9 @@
     .drop-down-toggle.active {
         transform: rotate(180deg);
     }
+    .dos-donots-list {
+        width: 100%;
+    }
 
 }
 
@@ -366,6 +369,15 @@
     }
     .types-rectal-prolapse {
         width: 100%;
+    }
+    .ksharasutra-considered ul {
+        padding-top: 0;
+    }
+    .ksharasutra-considered ul li {
+        width: calc(50% - 16px);
+    }
+    .nutrition-health-five-cards ul li {
+        width: calc(25% - 16px);
     }
 }
 
@@ -1002,8 +1014,24 @@
     .accurate-assessment-care ul {
         gap: 16px;
     }
-
-
+    .ksharasutra-considered ul li {
+        padding: 12px;
+    }
+    .ksharasutraSection {
+        flex-direction: column;
+        gap: 10px;
+    }
+      .nutrition-health-five-cards ul li {
+        width: calc(50% - 16px);
+    }
+    .dos-donots-list {
+        flex-direction: column;
+        margin-top: 16px;
+        gap: 16px;
+    }
+    .dos-donots-list div {
+        width: 100%;
+    }
 }
 
 @media(max-width: 420px) {
