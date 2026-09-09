@@ -257,6 +257,10 @@ ul {
     align-items: start !important;
 }
 
+.aic {
+    align-items: center !important;
+}
+
 .white-color {
     color: var(--white) !important;
 }
@@ -4141,4 +4145,154 @@ dd-about-doctor .container {}
 
 .accurate-assessment-care ul li span {
     font-weight: 600;
+}
+
+.ksharasutra-considered ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0 0 0;
+}
+
+.ksharasutra-considered ul li {
+    width: calc(33.33% - 14px);
+    background-color: var(--white);
+    border: solid 1px var(--grey);
+    border-radius: 16px;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: row;
+}
+
+.ksharasutraSection {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.ksharasutraIcon {
+    min-width: 80px;
+}
+
+.ksharasutra-content h4 {
+    margin: 0 0 4px 0;
+    line-height: 1.3;
+}
+
+.ksharasutra-content p {
+    line-height: unset;
+    padding: 0;
+    margin: 0;
+}
+
+.personalised-treatment {
+    background-color: #DBFFEA;
+    border-radius: 12px;
+    padding: 12px 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.personalised-treatment-text h5 {
+    margin: 0 0 4px 0;
+}
+
+.personalised-treatment-text p {
+    padding: 0;
+    margin: 0;
+}
+
+/*  */
+.nutrition-health-five-cards ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nutrition-health-five-cards ul li {
+    width: calc(25% - 15px);
+    background-color: var(--white);
+    border: solid 1px var(--grey);
+    border-radius: 16px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+.nutritionSection {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.nutritionIcon {
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.nutritionIcon img {
+    width: 100%;
+    height: auto;
+}
+
+.nutrition-content h4 {
+    margin: 0 0 4px 0;
+    line-height: 1.3;
+}
+
+.nutrition-content p {
+    line-height: unset;
+    padding: 0;
+    margin: 0;
+}
+
+.dos-donots-list {
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    gap: 30px;
+    margin: 40px auto 0;
+    width: 80%;
+}
+
+.dos-donots-list div {
+    width: calc(50% - 20px);
+    background-color: #DBFFEA;
+    border-radius: 12px;
+    padding: 24px;
+    font-size: 14px;
+}
+
+.dos-donots-list ul {
+    list-style-type: disc;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+.dos-donots-list div:nth-child(2) {
+    background: #FFA4A4;
+}
+.dos-donots-list h3 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dos-donots-list h3 md-icon {
+    color: green;
+}
+
+.dos-donots-list div:nth-child(2) h3 md-icon {
+    color: #ff0303;
 }
