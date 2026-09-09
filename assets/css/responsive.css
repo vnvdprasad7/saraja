@@ -367,12 +367,6 @@
     .types-rectal-prolapse {
         width: 100%;
     }
-    .ksharasutra-considered ul {
-        padding-top: 0;
-    }
-    .ksharasutra-considered ul li {
-        width: calc(50% - 16px);
-    }
 }
 
 @media(max-width: 767px) {
@@ -1008,13 +1002,7 @@
     .accurate-assessment-care ul {
         gap: 16px;
     }
-    .ksharasutra-considered ul li {
-        padding: 12px;
-    }
-    .ksharasutraSection {
-        flex-direction: column;
-        gap: 10px;
-    }
+
 
 }
 
