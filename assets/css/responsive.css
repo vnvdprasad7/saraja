@@ -379,6 +379,9 @@
     .nutrition-health-five-cards ul li {
         width: calc(25% - 16px);
     }
+    .comparison-table-wrapper {
+        width: 100%;
+    }
 }
 
 @media(max-width: 767px) {
@@ -1030,6 +1033,44 @@
         gap: 16px;
     }
     .dos-donots-list div {
+        width: 100%;
+    }
+     .comparison-table-wrapper {
+        overflow-x: auto;
+        padding-bottom: 5px;
+    }
+
+    .comparison-table {
+        min-width: 700px;
+        font-size: 9px;
+    }
+
+    .comparison-table thead th {
+        padding: 7px 9px;
+    }
+
+    .comparison-table tbody td {
+        padding: 6px 9px;
+    }
+    .fistula-treatment-steps ul {
+        width: 100%;
+    }
+    .fistula-treatmentSection {
+        gap: 12px;
+    }
+    .fistula-treatment-num {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .fistula-treatment-num:before {
+        left: 20px;
+        top: 40%;
+    }
+    .process-grid.process-grid4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .actual-chronic .dos-donots-list {
         width: 100%;
     }
 }
