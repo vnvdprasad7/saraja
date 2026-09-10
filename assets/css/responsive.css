@@ -1073,6 +1073,15 @@
     .actual-chronic .dos-donots-list {
         width: 100%;
     }
+    .laser-sergery .two-col {
+        grid-template-columns: 1fr;
+    }
+    .laser-info {
+        gap: 16px;
+    }
+    .laser-item {
+        width: calc(50% - 8px);
+    }
 }
 
 @media(max-width: 420px) {
