@@ -212,9 +212,11 @@ ul {
 .pt-0 {
     padding-top: 0 !important;
 }
+
 .pb-0 {
     padding-bottom: 0 !important;
 }
+
 .mt-0 {
     margin-top: 0 !important;
 }
@@ -4467,6 +4469,7 @@ dd-about-doctor .container {}
     border-radius: 8px;
     flex-direction: column;
     padding: 10px 16px;
+    background-color: var(--white);
 }
 
 .fistula-treatment-content h4 {
@@ -4503,4 +4506,39 @@ dd-about-doctor .container {}
 
 .actual-chronic .dos-donots-list div:nth-child(2) {
     background-color: #DBFFEA;
+}
+
+.laser-sergery .two-col {
+    grid-template-columns: 0.9fr 1fr;
+}
+
+.laser-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.laser-item {
+    width: calc(50% - 10px);
+    background-color: #DBFFEA;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.laser-info .laser-item:nth-child(2) {
+    background-color: #F7E7BD;
+}
+
+.laser-info .laser-item:nth-child(3) {
+    background-color: #96D3FF;
+}
+
+.laser-info .laser-item:nth-child(4) {
+    background-color: #FFA4A4;
+}
+
+.laser-item p {
+    margin: 0;
 }
