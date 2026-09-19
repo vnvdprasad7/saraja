@@ -183,7 +183,9 @@
     .dos-donots-list {
         width: 100%;
     }
-
+    .talk-with-us-container {
+        width: 100%;
+    }
 }
 
 @media(max-width: 1023px) {
@@ -382,6 +384,19 @@
     .comparison-table-wrapper {
         width: 100%;
     }
+    .bleeding-signs ul {
+        width: 75%;
+    }
+    .rectal-signs-symptoms-content ul li {
+        width: calc(33.33% - 16px);
+    }
+    .blog-layout {
+        grid-template-columns: 1fr;
+    }
+    .blog-sidebar {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 @media(max-width: 767px) {
@@ -389,8 +404,16 @@
         padding: 30px 0
     }
 
+    h1 {
+        font-size: 24px;
+    }
+
     h2 {
         font-size: 18px
+    }
+
+    .section-head p br {
+        display: none;
     }
 
     .actions {
@@ -433,7 +456,12 @@
     }
 
     .hero h1 {
-        font-size: 28px
+        font-size: 24px;
+        line-height: 1.35;
+    }
+
+    .hero h1 br {
+        display: none;
     }
 
     .hero-visual {
@@ -1005,8 +1033,8 @@
     .rectal-signs-symptoms-content ul li {
         width: calc(50% - 8px);
     }
-    .rectal-signs-symptoms-content ul li span {
-        min-height: 36px;
+    .rectal-signs-symptoms-icon {
+        margin-bottom: 4px;
     }
     .types-rectal-prolapse .articles-slider-item {
         margin: 0;
@@ -1082,8 +1110,140 @@
     .laser-item {
         width: calc(50% - 8px);
     }
-}
+    .recovery-benifits-after-laser {
+        padding-top: 10px;
+        gap: 10px;
+    }
+    .kshra-num {
+        font-size: 16px;
+        width: 50px;
+        min-width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .rectal-signs-symptoms-icon {
+        height: 140px;
+    }
+     .bleeding-signs ul {
+        width: 100%;
+    }
+    .rectal-signs-symptoms-content ul li {
+        width: calc(50% - 16px);
+    }
+    .when-should-see-doctor .trust-banner-inner {
+        padding-left: 100px;
+    }
+    .when-should-see-doctor-image {
+        max-width: 120px;
+    }
+    .when-should-see-doctor {
+        margin-top: 0;
+    }
+    .related-treatments-article .piles-treatments {
+        gap: 16px;
+    }
+        
+    .blog-page {
+        padding: 25px 15px 45px;
+    }
 
+    .blog-title {
+        font-size: 26px;
+        margin-bottom: 8px;
+    }
+
+    .blog-header {
+        margin-bottom: 16px;
+    }
+
+    .blog-topics {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 5px;
+        scrollbar-width: none;
+    }
+
+    .blog-topics::-webkit-scrollbar {
+        display: none;
+    }
+
+    .blog-topic {
+        flex: 0 0 auto;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .blog-sidebar {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-image {
+        height: 190px;
+    }
+    .visionary-founder .section-head {
+        max-width: 100%;
+    }
+    .talk-with-us-container {
+        grid-template-columns: 1fr;
+    }
+    .talk-with-us-form ul li {
+        width: 100%;
+    }
+    .talk-with-us-form ul {
+        gap: 12px;
+    }
+    .talk-with-us-form ul li h6 {
+        font-size: 13px;
+    }
+    .talk-with-us-form .btn {
+        margin-top: 12px;
+    }
+    .patient-tabs-conatiner {
+        grid-template-columns: 1fr;
+    }
+    .sitemap .container {
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+    .privacy-section {
+        margin: 0;
+    }
+    .careers-section h3 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+@media(max-width: 590px) {
+    #logo img {
+        max-width: 140px;
+    }
+    .footerRight {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog-title {
+        font-size: 24px;
+    }
+
+    .blog-card-title {
+        font-size: 16px;
+    }
+
+    .blog-card-body {
+        padding: 13px;
+    }
+
+    .blog-image {
+        height: 180px;
+    }
+    
+    .hero h1 {
+        font-size: 22px;
+    }
+}
 @media(max-width: 420px) {
     .container {
         width: calc(100% - 24px)
