@@ -47,6 +47,10 @@ input[type="text"] {
     font-size: 14px;
 }
 
+input[type="datetime-local"] {
+    padding-right: 10px !important;
+}
+
 textarea {
     width: 100%;
     /* border-color: var(--white); */
@@ -139,8 +143,6 @@ ul {
     margin: 0;
 }
 
-
-
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
@@ -205,8 +207,20 @@ ul {
     -webkit-font-smoothing: antialiased
 }
 
+.relative {
+    position: relative;
+}
+
+.nobg {
+    background: transparent !important;
+}
+
 .ma {
     margin: auto !important;
+}
+
+.pad0 {
+    padding: 0 !important;
 }
 
 .pt-0 {
@@ -267,6 +281,10 @@ ul {
 
 .aic {
     align-items: center !important;
+}
+
+.fww {
+    flex-wrap: wrap;
 }
 
 .tac {
@@ -1679,6 +1697,14 @@ p.about-address md-icon {
     transition: all 1s ease-in-out;
 }
 
+.quote.quote-bottom {
+    left: auto;
+    right: 10px;
+    bottom: 10px;
+    top: auto;
+    transform: rotate(180deg);
+}
+
 .testimonial p {
     font-size: 11px;
     margin: 15px 0;
@@ -2072,11 +2098,24 @@ p.about-address md-icon {
     text-decoration: underline;
 }
 
+.copyright p {
+    min-width: max-content;
+}
+
 .copyright ul {
     display: flex;
     flex-direction: row;
-    gap: 10px;
     font-size: 13px;
+    flex-wrap: wrap;
+    padding-right: 20px;
+}
+
+.copyright ul li {
+    padding-right: 10px;
+}
+
+.copyright ul li:last-child {
+    padding-right: 0;
 }
 
 .footer-social {
@@ -2355,6 +2394,14 @@ p.about-address md-icon {
     color: unset;
     margin-top: 4px;
     line-height: 18px;
+}
+
+.visionary-founder {
+    /* background: linear-gradient(90deg, #075c3a, #0b7046); */
+    color: var(--white);
+    background-image: url(../images/appointment-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .visionary-founder .container {
@@ -2925,6 +2972,7 @@ p.about-address md-icon {
     padding: 12px;
     box-shadow: var(--shadow);
     flex: 1;
+    background: var(--white);
 }
 
 .our-team-list-top {
@@ -3138,6 +3186,7 @@ p.about-address md-icon {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .vision-mission-section>li {
@@ -3153,6 +3202,17 @@ p.about-address md-icon {
     flex-direction: row;
     gap: 10px;
     border-radius: 12px;
+    box-shadow: var(--shadow);
+    /* border: solid 1px var(--grey); */
+}
+
+.vision-mission * {
+    transition: ease-in-out 0.3s all;
+}
+
+.vision-mission-box:hover {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, .25);
+    transform: translateY(-3px);
 }
 
 .vision-mission-icon {
@@ -3451,7 +3511,7 @@ section.doctor-inner-banner {
     overflow: hidden;
     box-shadow: 0 2px 12px rgba(0, 0, 0, .06);
     border: solid 1px var(--grey);
-    margin: 0 16px;
+    margin: 8px 16px;
     padding: 12px;
 }
 
@@ -4075,9 +4135,11 @@ section.doctor-inner-banner {
     gap: 12px;
     margin: 20px 0 30px 0;
 }
+
 .unserstanding-diffetence ul * {
     transition: ease-in-out 0.3s all;
 }
+
 .unserstanding-diffetence ul li {
     border: solid 1px var(--grey);
     border-radius: 12px;
@@ -4422,9 +4484,11 @@ section.doctor-inner-banner {
     margin: 40px auto 0;
     width: 80%;
 }
+
 .dos-donots-list * {
     transition: ease-in-out 0.3s all;
 }
+
 .dos-donots-list div {
     width: calc(50% - 20px);
     background-color: #DBFFEA;
@@ -4745,9 +4809,11 @@ section.doctor-inner-banner {
     width: 60%;
     flex-wrap: wrap;
 }
+
 .bleeding-signs ul * {
     transition: ease-in-out 0.3s all
 }
+
 .bleeding-signs ul li {
     display: flex;
     flex-direction: row;
@@ -5353,4 +5419,289 @@ section.doctor-inner-banner {
     gap: 4px;
     font-size: 14px;
     margin: 8px 0 12px 0;
+}
+
+.patient-first-section {
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 50px;
+    padding-top: 10px;
+}
+
+.patient-first-comment {
+    background: #DBFFEA;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 30px;
+    border-radius: 16px;
+    text-align: center;
+    position: relative;
+}
+
+.patient-first-comment p {
+    font-size: 14px;
+}
+
+.hospital-infrastructure {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 20px;
+}
+
+.hospital-infrastructure .two-col {
+    grid-template-columns: 1fr 1fr;
+}
+
+.hospital-infrastructure .two-col .about-image {
+    border-radius: 20px;
+}
+
+.insurance-partners {
+    margin-top: 20px;
+}
+
+.insurance-partners ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 16px 0 12px 0;
+}
+
+.insurance-partners ul li {
+    border: solid 1px var(--grey);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    min-width: 100px;
+    justify-content: center;
+    padding: 0 10px;
+    min-height: 65px;
+}
+
+.insurance-partners ul * {
+    transition: ease-in-out 0.3s all;
+}
+
+.insurance-partners ul li:hover {
+    box-shadow: 0 2px 9px rgba(0, 0, 0, .15);
+    transform: translateY(-3px);
+    border-color: var(--gold);
+}
+
+.awards-section {
+    background: var(--light-grey);
+    background-image: url('../images/awards-bg.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.awards-section ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.awards-section ul li {
+    border: solid 1px var(--black);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    width: calc(20% - 16px);
+    text-align: center;
+    gap: 12px;
+    background: var(--white);
+}
+
+.awards-section ul * {
+    transition: ease-in-out 0.3s all;
+}
+
+.awards-section ul li:hover {
+    box-shadow: 0 2px 9px rgba(0, 0, 0, .15);
+    transform: translateY(-3px);
+    border-color: var(--gold);
+}
+
+.awards-section ul li img {
+    max-height: 100px;
+}
+
+.gallery-slider-items {
+    margin: 14px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: solid 1px var(--grey);
+    transition: ease-in-out 0.3s all;
+}
+
+.gallery-slider-items * {
+    transition: ease-in-out 0.3s all;
+}
+
+.gallery-slider-items img {
+    width: 100%;
+}
+
+.gallery-slider-items h4 {
+    margin: 0;
+    padding: 12px 16px;
+}
+
+.gallery-slide-image {
+    overflow: hidden;
+}
+
+.gallery-slider-items:hover {
+    box-shadow: 0 2px 9px rgba(0, 0, 0, .15);
+    transform: translateY(-2px);
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
+.gallery-slider-items:hover img {
+    transform: scale(1.2);
+    transform-origin: center center;
+}
+
+.gallery-slider-items h4 {
+    color: unset;
+}
+
+/* ========== Onload Page Starts ==========  */
+.onloadLayer {
+    transition: ease-in-out 0.3s all;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.59);
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 9;
+}
+
+.onloadSection {
+    transition: ease-in-out 0.5s all;
+    border-radius: 8px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 1001px;
+    background-color: var(--white);
+    z-index: 10;
+    transform: translate(-50%, -50%) scale(0.8);
+    overflow: auto;
+    max-height: 100%;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.closeButton {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: solid 3px var(--gold);
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: var(--white);
+}
+
+.closeButton:before,
+.closeButton:after {
+    content: '';
+    width: 16px;
+    height: 2px;
+    background-color: var(--gold);
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    transform: rotate(45deg);
+}
+
+.closeButton:before {
+    transform: rotate(-45deg);
+}
+
+.onloadDialogOut .onloadSection {
+    top: -100%;
+}
+
+.onloadDialogOut .onloadLayer {
+    top: -100vh;
+}
+
+.appointment-dialog-content-form {
+    padding: 20px 30px;
+    overflow: auto;
+}
+
+.appointment-dialog-content-form input,
+.appointment-dialog-content-form select {
+    height: 38px;
+    padding: 0 11px;
+
+}
+
+.appointment-dialog-content-form input,
+.appointment-dialog-content-form select,
+.appointment-dialog-content-form textarea {
+    border: 1px solid var(--grey);
+    border-radius: 8px;
+    background: var(--white);
+    font: inherit;
+    font-size: 11px;
+    color: #59655f;
+    width: 100%;
+    padding-right: 40px;
+    box-shadow: none;
+    margin: 0;
+}
+
+.appointment-dialog-content-form ul li {
+    position: relative;
+}
+
+.appointment-dialog-content-form ul li md-icon,
+.appointment-dialog-content-form ul li input[type="date"]::-webkit-calendar-picker-indicator {
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    width: 20px;
+    line-height: 20px;
+    height: 20px;
+    color: var(--muted);
+}
+
+.appointment-dialog-content-form ul {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.appointment-dialog-content-form .btn-primary {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.appointment-dialog-content-form ul li h5 {
+    margin: 0 0 4px 0;
+}
+.appointment-dialog-content {
+    gap: 0 !important;
 }
