@@ -186,6 +186,9 @@
     .talk-with-us-container {
         width: 100%;
     }
+    .awards-section {
+        background-size: auto 50%;
+    }
 }
 
 @media(max-width: 1023px) {
@@ -396,6 +399,43 @@
     .blog-sidebar {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .vision-mission-section {
+        width: 100%;
+    }
+    .onloadSection {
+        width: 96%;
+        display: flex;
+    }
+    .appointment-dialog-content-img {
+        display: none;
+    }
+    .appointment-dialog-content {
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        max-height: 100%;
+        overflow: auto;
+    }
+    .appointment-dialog-content-form {
+        padding: 20px;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        max-height: 100%;
+    }
+    .closeButton {
+        width: 30px;
+        height: 30px;
+    }
+    .appointment-dialog-content-form ul {
+        overflow: auto;
+        padding-right: 20px;
+        margin-bottom: 10px;
+    }
+    .appointment-dialog-content-form .btn-primary {
+        width: calc(100% - 20px);
     }
 }
 
@@ -934,7 +974,7 @@
         grid-template-columns: unset;
     }
     .about-image {
-        display: none;
+        /* display: none; */
     }
     .doctor-inner-banner-content.two-col {
         grid-template-columns: 1fr;
@@ -1215,6 +1255,31 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
+    }
+    .vision-mission-section>li {
+        width: 100%;
+    }
+    .vision-mission-icon {
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+    }
+    .vision-mission-icon md-icon {
+        font-size: 26px;
+        width: 26px;
+        min-width: 26px;
+    }
+    .hospital-infrastructure .two-col {
+        grid-template-columns: 1fr;
+    }
+    .awards-section {
+        background-size: auto 20%;
+    }
+    .awards-section ul li {
+        width: calc(50% - 10px);
+    }
+    .gallery-slider-items {
+        text-align: center;
     }
 }
 @media(max-width: 590px) {
