@@ -1,14 +1,98 @@
 Pages
     - Home
-    - About Us kukatpally
-    - About Us 2 pending
+    - About Us 
+    - Kukatpally 
     - Doctors
     - Doctor . details
-    - Treatments 
-        . Pilles
-        . Fistula
-        . Fissure
-        . Pilonidal Sinus
-        . Perianal Abscess
-        . Rectal Prolapse
-    - 
+    - Specialites & Treatments
+
+        => Treatments - 6 pages
+            . Pilles
+            . Fistula
+            . Fissure
+            . Pilonidal Sinus
+            . Perianal Abscess
+            . Rectal Prolapse
+
+        => Ayurvedic Treatments - 5 pages
+            . Ksharasutra Therapy -> Desktop banner shade issue
+            . MCDPA 
+            . Ayurvedic Medicines
+            . Diet & Lifestyle
+            . Post-treatment Care
+
+        => Laser Treatments - 6 pages
+            . Laser Surgery for Piles
+            . Laser Surgery for Fistula
+            . Laser Surgery for Fissure
+            . Laser Surgery for Pilonidal Sinus
+            . Benefits of Laser Surgery
+            . Recovery after Laser Surgery
+
+    - Symptoms - Page + 8 inner pages
+        . Bleeding During Bowel Movements
+        . Pain While Passing Stool
+        . Anal Itching
+        . Anal Lump 
+        . Pus Discharge
+        . Burning Sensation
+        . Blood in Stool
+        . Difficulty Sitting
+    - Blog
+    - Blog inner page    
+    - Contact Us    
+    - Patient Info
+
+    - Privacy Policy
+    - Terms & Conditions
+    - Disclaimer
+    - Refund & Cancellation Policy
+    - Sitemap
+    - Careers
+
+
+    - Policies & Guidelines
+    - Cookie Policy
+    - Accessibility Statement
+
+
+
+https://wa.me/919299900129
+
+Pages
+- Home
+- About Us kukatpally
+- About Us 2 pending
+- Doctors
+- Doctor . details
+- Specialites & Treatments
+
+=> Treatments 6 pages
+. Pilles
+. Fistula
+. Fissure
+. Pilonidal Sinus
+. Perianal Abscess
+. Rectal Prolapse
+
+=> Ayurvedic Treatments 5 pages
+. Ksharasutra Therapy -> Desktop banner shade issue
+. MCDPA 
+. Ayurvedic Medicines
+. Diet & Lifestyle
+. Post-treatment Care
+
+=> Laser Treatments 
+. Laser Surgery for Piles
+. Laser Surgery for Fistula
+. Laser Surgery for Fissure
+. Laser Surgery for Pilonidal Sinus
+
+
+Git:
+
+git add .
+
+git status
+
+git commit -m "Add website files"
