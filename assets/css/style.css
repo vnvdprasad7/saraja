@@ -2017,7 +2017,7 @@ p.about-address md-icon {
     display: grid;
     grid-template-columns: 260px 1fr;
     gap: 45px;
-    padding: 48px 0
+    padding: 48px 0 20px 0;
 }
 
 .footer-brand img {
@@ -2031,6 +2031,10 @@ p.about-address md-icon {
     font-size: 14px;
     color: #a8ce59;
     margin: 0 0 6px 0;
+}
+
+.footer h3 span {
+    color: var(--gold);
 }
 
 .footer p,
@@ -2100,6 +2104,7 @@ p.about-address md-icon {
 
 .copyright p {
     min-width: max-content;
+    margin-bottom: 0;
 }
 
 .copyright ul {
@@ -2107,7 +2112,10 @@ p.about-address md-icon {
     flex-direction: row;
     font-size: 13px;
     flex-wrap: wrap;
-    padding-right: 20px;
+    border-bottom: solid 1px var(--white);
+    padding: 0 0 10px 0;
+    margin: 0 0 12px 0;
+    justify-content: center;
 }
 
 .copyright ul li {
@@ -2169,7 +2177,9 @@ p.about-address md-icon {
     min-height: 38px;
     display: flex;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 12px 0;
 }
 
 /*========== Mobile Menu Icon Starts ==========*/
