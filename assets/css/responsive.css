@@ -62,7 +62,7 @@
     .header-top-right.desktop-header-info {
         display: flex;
         flex: unset;
-        flex-direction: column;
+        flex-direction: column-reverse;
         width: 100%;
         gap: 10px;
         color: white;
