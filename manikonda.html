@@ -652,72 +652,11 @@
       </div>
   </footer>
 
-  <!-- onload form Starts-->
-    <div class="onloadPopup">
-        <div class="onloadLayer"></div>
-        <div class="onloadSection">
-            <span class="closeButton"></span>
-            <div class="appointment-dialog-content two-col">
-              
-              <div class="appointment-dialog-content-form">
-                <h2>Book Appointment</h2>
-                <ul>
-                  <li>
-                    <h5>Name *</h5>
-                    <div class="relative">
-                      <input type="text" placeholder="Your Name">
-                      <md-icon class="material-symbols-outlined">person</md-icon>
-                    </div>
-                  </li>
-                  <li>
-                    <h5>Mobile Number *</h5>
-                    <div class="relative">
-                      <input type="tel" placeholder="Your Number">
-                      <md-icon class="material-symbols-outlined">call_log</md-icon>
-                    </div>
-                  </li>
-                  <li>
-                    <h5>Email *</h5>
-                    <div class="relative">
-                      <input type="email" placeholder="Your Email">
-                      <md-icon class="material-symbols-outlined">mail</md-icon>
-                    </div>
-                  </li>
-                  <li>
-                    <h5>Select Speciality *</h5>
-                    <select name="" id="">
-                      <option value="" selected>Select Speciality</option>
-                      <option value="">option 1</option>
-                      <option value="">option 2</option>
-                      <option value="">option 3</option>
-                    </select>
-                  <li>
-                    <h5>Preferred date & Time *</h5>
-                    <input type="datetime-local" placeholder="Preferred date & Time"></li>
-                  <li>
-                    <h5>Message *</h5>
-                    <textarea name="" placeholder="Message" rows="2" id=""></textarea></li>
-                </ul>
-                <a class="btn btn-primary" href="contact.html#bookAnAppointment">Submit<md-icon class="material-symbols-outlined">send</md-icon></a>
-              </div>
-              <div class="appointment-dialog-content-img"><img src="assets/images/appointment-form-image.png" alt=""></div>
-
-            </div>
-        </div>
-    </div>
-    <!-- onload form Ends-->
-
   <a href="javascript:void(0)" class="back-to-top" onclick="$('html,body').animate({scrollTop:0},500);"></a>
   <script src="assets/js/global.js"></script>
   <script src="assets/js/slick.js"></script>
   <script>
-     // =========== Onload Dailog
-        $(window).load(function () {
-            $('.onloadLayer,.closeButton').click(function () {
-                $('body').toggleClass('onloadDialogOut');
-            });
-        });
-
+    
         //======== Video SRC 
         $(".video__list").click(function () {
             console.log($(this).attr("data-url"));
