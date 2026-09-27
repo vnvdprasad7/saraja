@@ -1,7 +1,13 @@
 //======== Mobile Menu
-$('.nav-icon,.overlay').click(function () {
-    $('.nav-icon').toggleClass('open');
+$('.main-nav-icon,.main-overlay').click(function () {
+    $('.main-nav-icon').toggleClass('open');
     $('body').toggleClass('open-menu');
+});
+
+//======== Mobile Menu
+$('.extra-menu,.overlay').click(function () {
+    $('.extra-menu').toggleClass('open');
+    $('body').toggleClass('open-extra-menu');
 });
 
 //======== Auto Year update
@@ -21,16 +27,26 @@ $(window).scroll(function () {
 //======== Mega Drop Down
 function megaMenu() {
     if ($(window).width() < 1100) {
-        $('.drop-down-toggle').off('click').on('click', function () {
-            $(this).next('.sub-nav-main').stop(true, true).slideToggle();
+
+        $('.drop-down-toggle, .more-toggle').off('click').on('click', function (e) {
+            e.preventDefault();
+
+            $(this)
+                .closest('li')
+                .children('.sub-nav-main')
+                .stop(true, true)
+                .slideToggle();
+
             $(this).toggleClass('active');
         });
 
     } else {
 
-        $('.mega-drop-down').off('click');
+        $('.drop-down-toggle, .more-toggle').off('click');
+
         $('.sub-nav-main').removeAttr('style');
-        $('.mega-drop-down').removeClass('active');
+
+        $('.drop-down-toggle, .more-toggle').removeClass('active');
     }
 }
 
