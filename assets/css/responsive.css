@@ -28,22 +28,9 @@
         background: transparent;
         color: white;
         padding: 7px 20px;
-    }
-    nav ul li a.more-toggle md-icon {
-        position: absolute;
-        right: 6px;
-        top: 4px;
-        background: var(--white);
-        color: var(--green);
-        border-radius: 2px;
-        box-shadow: var(--shadow);
-        width: 20px;
-        height: 20px;
-        line-height: 20px;
-        font-size: 20px;
-    }
+    } 
 
-    .more-toggle.active md-icon {
+    .more-toggle.active .material-symbols-outlined {
         transform: rotate(180deg);
     }
     .header-links {
@@ -217,21 +204,30 @@
         grid-template-columns: 1fr 40%;
     }
 
-    .drop-down-toggle {
+    .nav ul li a .material-symbols-outlined {
         position: absolute;
         right: 6px;
-        top: 4px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
         background: var(--white);
-        color: var(
-        --green);
+        color: var(--green);
         border-radius: 2px;
         box-shadow: var(--shadow);
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 20px;
     }
 
     .sub-nav {
         grid-template-columns: 1fr;
         gap: 20px;
         padding-right: 0;
+    }
+
+    .two-list-main .sub-nav {
+        grid-template-columns: 1fr;
     }
 
     .sub-nav-list h4 {
@@ -242,9 +238,9 @@
         color: unset;
     }
 
-    .drop-down-toggle.active {
+    /* .drop-down-toggle.active {
         transform: rotate(180deg);
-    }
+    } */
     .dos-donots-list {
         width: 100%;
     }
