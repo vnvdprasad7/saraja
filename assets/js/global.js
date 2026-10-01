@@ -5,7 +5,7 @@ $('.main-nav-icon,.main-overlay').click(function () {
 });
 
 //======== Mobile Menu
-$('.extra-menu,.overlay').click(function () {
+$('.extra-menu,.extra-menu-overlay').click(function () {
     $('.extra-menu').toggleClass('open');
     $('body').toggleClass('open-extra-menu');
 });
@@ -28,25 +28,48 @@ $(window).scroll(function () {
 function megaMenu() {
     if ($(window).width() < 1100) {
 
-        $('.drop-down-toggle, .more-toggle').off('click').on('click', function (e) {
+        $('nav ul li a.show-sub-menu').on('click', function (e) {
             e.preventDefault();
 
-            $(this)
-                .closest('li')
-                .children('.sub-nav-main')
-                .stop(true, true)
-                .slideToggle();
+            const $this = $(this);
+            const $submenu = $this.closest('li').children('.sub-nav-main');
 
-            $(this).toggleClass('active');
+            // Close other submenus
+            $('.sub-nav-main').not($submenu).stop(true, true).slideUp(300);
+            // Remove active from other links
+            $('.show-sub-menu').not($this).fadeIn('li').removeClass('active');
+            // Toggle current submenu
+            $submenu.stop(true, true).slideToggle(300);
+            $this.parent('li').toggleClass('active');
         });
+
+        // $('.show-sub-menu').off('click').on('click', function (e) {
+        //     e.preventDefault();
+
+        //     $(this)
+        //         .closest('li')
+        //         .children('.sub-nav-main')
+        //         .stop(true, true)
+        //         .slideToggle();
+
+        //     $(this).toggleClass('active');
+        // });
+
+
+        // $('nav ul li a.show-sub-menu').on('click', function () {
+        //     $(this).closest('li').children('.sub-nav-main').stop(true, true).slideToggle();
+        //     $('.sub-nav-main').not($(this).closest('li').children('.sub-nav-main')).slideUp();
+        //     $(this).toggleClass('active');
+        //     $('.show-sub-menu').not($(this)).removeClass('active');
+        // });
 
     } else {
 
-        $('.drop-down-toggle, .more-toggle').off('click');
+        // $('.show-sub-menu').off('click');
 
-        $('.sub-nav-main').removeAttr('style');
+        // $('.sub-nav-main').removeAttr('style');
 
-        $('.drop-down-toggle, .more-toggle').removeClass('active');
+        // $('.show-sub-menu').removeClass('active');
     }
 }
 
