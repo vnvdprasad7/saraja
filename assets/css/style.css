@@ -569,6 +569,7 @@ ul {
     opacity: 0;
     max-height: 0;
     position: absolute;
+    z-index: 8;
     top: 34px;
     right: 0;
     overflow: hidden;
@@ -650,20 +651,14 @@ nav ul li a {
     color: var(--dark);
     display: flex;
     font-size: 14px;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    gap: 3px;
+    position: relative;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
+nav ul li.active > a {
     color: var(--gold);
-}
-
-.drop-down-toggle  {
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
-    font-size: 20px;
 }
 
 nav ul li a md-icon.material-symbols-outlined {
@@ -674,6 +669,10 @@ nav ul li a md-icon.material-symbols-outlined {
     color: unset;
 }
 
+nav ul li.active a md-icon.material-symbols-outlined {
+    transform: rotate(180deg);
+}
+
 .sub-nav-main {
     display: none;
 }
@@ -682,15 +681,26 @@ nav ul li a md-icon.material-symbols-outlined {
     grid-template-columns: 1fr;
 }
 
+.two-list-main .sub-nav {
+    grid-template-columns: 1fr 1fr;
+}
+
 @media(min-width: 1111px) {
     ::-webkit-scrollbar {
         width: 8px;
         height: 8px;
+    } 
+    
+    nav ul li:hover a md-icon.material-symbols-outlined {
+        transform: rotate(180deg);
     }
 
-    nav ul li:hover .drop-down-toggle,
-    nav ul li:has(a.active) .drop-down-toggle {
-        transform: rotate(180deg);
+     nav ul li:hover > a {
+        color: var(--gold);
+    }
+
+    nav ul li a:hover,nav ul li a.active {
+        color: var(--gold);
     }
 
     nav ul li:hover .sub-nav-main {
@@ -705,15 +715,23 @@ nav ul li a md-icon.material-symbols-outlined {
         min-width: max-content;
         padding-top: 32px;
     }
-
-    .drop-down-toggle {
-        /* display: none; */
-    }
+ 
     .mobile-more-links,
     .desktop-header-info {
         display: none;
     }
-
+    .open-extra-menu .extra-menu-overlay {
+        display: block;
+    }
+    .extra-menu-overlay {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 7;
+        top: 0;
+        left: 0;
+    }
 }
 
 .sub-nav {
@@ -721,7 +739,7 @@ nav ul li a md-icon.material-symbols-outlined {
     background-color: var(--white);
     border-top: solid 4px var(--green);
     padding: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .sub-nav-list {
@@ -744,6 +762,7 @@ nav ul li a md-icon.material-symbols-outlined {
     font-weight: 600;
     padding: 0 30px 2px 0;
     width: max-content;
+    font-size: 14px;
 }
 
 .nav-cta {
@@ -3936,6 +3955,10 @@ section.doctor-inner-banner {
     list-style-type: disclosure-closed;
     margin-left: 20px;
     margin-right: 10px;
+    color: var(--black);
+}
+
+.breadCrumb ul li a.active {
     color: var(--gold);
 }
 
