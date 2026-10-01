@@ -10,32 +10,35 @@
 </head>
 <body>
 
-    <header class="site-header">
-        <div class="top-strip">
-        <div class="container top-inner">
-            <ul>
-                <li><a href="tel:+919299900129"><md-icon class="material-symbols-outlined">phone</md-icon>+91 9299900129</a></li>
-                <li><a href=""><md-icon class="material-symbols-outlined">local_hospital</md-icon>All Hospitals</a></li>
-            </ul>
-        </div>
-        </div>
-        <div class="nav-wrap">
-        <div class="container nav">
-          <a id="logo" href="index.html">
-            <img src="assets/images/logo.png" alt="Dr. Saraja's Ayurvedic">
-          </a>
-          <div class="header-links">
+   <header class="site-header">
+    <div class="nav-wrap">
+      <div class="container nav">
+        <a id="logo" href="index.html">
+          <img src="assets/images/logo.png" alt="Dr. Saraja's Ayurvedic">
+        </a>
+        <div class="header-links">
+          <div class="header-top-info">
+            <div class="header-search">
+              <input type="search" placeholder="Search doctors, services, tests...">
+              <md-icon class="material-symbols-outlined">search</md-icon>
+            </div>
+            <div class="header-top-right">
+                <a class="header-mobile-number" href="tel:+919299900129"><md-icon class="material-symbols-outlined">phone</md-icon>+91 9299900129</a>
+                <a class="nav-cta" href="contact.html#bookAnAppointment">Book Appointment</a>
+            </div>
+          </div>
+          <div class="header-bottom">
+
             <nav class="main-nav">
               <ul>
-                <li><a href="about.html"><md-icon class="material-symbols-outlined">info</md-icon>About Us</a></li>
-                <li><a href="doctors.html"><md-icon class="material-symbols-outlined">people</md-icon>Our Doctors</a></li>                                
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="doctors.html">Our Doctors</a></li>
                 <li>
-                  <a href="treatments.html"><md-icon class="material-symbols-outlined">healing</md-icon>Specialities & Treatments</a>
-                  <md-icon class="drop-down-toggle material-symbols-outlined">arrow_drop_down</md-icon>
+                  <a class="show-sub-menu">Conditions & Symptoms <md-icon class="material-symbols-outlined">keyboard_arrow_down</md-icon></a>                    
                   <div class="sub-nav-main">
                     <div class="sub-nav">
                       <div class="sub-nav-list">
-                        <h4>Treatments</h4>
+                        <h4>Conditions We Treat</h4>
                         <ul>
                           <li><a href="treatments/piles.html">Piles (Hemorrhoids)</a></li>
                           <li><a href="treatments/fistula.html">Fistula</a></li>
@@ -46,39 +49,7 @@
                         </ul>
                       </div>
                       <div class="sub-nav-list">
-                        <h4>Ayurvedic Treatments</h4>
-                        <ul>
-                          <li><a href="treatments/ksharasutra-therapy.html">Kshara Sutra Therapy</a></li>
-                          <li><a href="treatments/mcdpa.html">MCDPA</a></li>
-                          <li><a href="treatments/ayurvedic-medicines.html">Ayurvedic Medicines</a></li>
-                          <li><a href="treatments/diet-lifestyle.html">Diet & Lifestyle</a></li>
-                          <li><a href="treatments/post-treatment-care.html">Post-Treatment Care</a></li>
-                        </ul>
-                      </div>
-                      <div class="sub-nav-list">
-                        <h4>Laser Treatments</h4>
-                        <ul>
-                          <li><a href="treatments/laser-surgery-piles.html">Laser Surgery for Piles</a></li>
-                          <li><a href="treatments/laser-surgery-fistula.html">Laser Surgery for Fistula</a></li>
-                          <li><a href="treatments/laser-surgery-fissure.html">Laser Surgery for Fissure</a></li>
-                          <li><a href="treatments/laser-surgery-pilonidal-sinus.html">Laser Surgery for Pilonidal Sinus</a></li>
-                          <li><a href="treatments/benefits-of-laser-surgery.html">Benefits of Laser Surgery</a></li>
-                          <li><a href="treatments/recovery-after-laser-surgery.html">Recovery After Laser Surgery</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li><a href="patient-info.html"><md-icon class="material-symbols-outlined">person_heart</md-icon>Patient Info</a></li>
-                <li><a href="blogs.html"><md-icon class="material-symbols-outlined">newspaper</md-icon>Blogs</a></li>
-                <li><a href="contact.html"><md-icon class="material-symbols-outlined">mail</md-icon>Contact Us</a></li>
-                <li>
-                  <a href="symptoms.html"><md-icon class="material-symbols-outlined">symptoms</md-icon>Symptoms</a>
-                  <md-icon class="drop-down-toggle material-symbols-outlined">arrow_drop_down</md-icon>
-                  <div class="sub-nav-main single-list-main">
-                    <div class="sub-nav">
-                      <div class="sub-nav-list">
-                        <h4>Treatments</h4>
+                        <h4>Symptoms We Treat</h4>
                         <ul>
                           <li><a href="symptoms/bleeding-during-bowel-movements.html">Bleeding During Bowel Movements</a></li>
                           <li><a href="symptoms/pain-while-passing-stool.html">Pain While Passing Stool</a></li>
@@ -92,16 +63,92 @@
                       </div>
                     </div>
                   </div>
+                </li>                                  
+                 <li>
+                  <a  class="show-sub-menu">Treatments <md-icon class="material-symbols-outlined">keyboard_arrow_down</md-icon></a>
+                  <div class="sub-nav-main two-list-main">
+                    <div class="sub-nav">
+                      <div class="sub-nav-list">
+                        <h4>Laser Treatments</h4>
+                        <ul>
+                          <li><a href="treatments/laser-surgery-piles.html">Laser Surgery for Piles</a></li>
+                          <li><a href="treatments/laser-surgery-fistula.html">Laser Surgery for Fistula</a></li>
+                          <li><a href="treatments/laser-surgery-fissure.html">Laser Surgery for Fissure</a></li>
+                          <li><a href="treatments/laser-surgery-pilonidal-sinus.html">Laser Surgery for Pilonidal Sinus</a></li>
+                          <li><a href="treatments/benefits-of-laser-surgery.html">Benefits of Laser Surgery</a></li>
+                          <li><a href="treatments/recovery-after-laser-surgery.html">Recovery After Laser Surgery</a></li>
+                        </ul>
+                      </div>
+                      <div class="sub-nav-list">
+                        <h4>Ayurvedic Treatments</h4>
+                        <ul>
+                          <li><a href="treatments/ksharasutra-therapy.html">Kshara Sutra Therapy</a></li>
+                          <li><a href="treatments/mcdpa.html">MCDPA</a></li>
+                          <li><a href="treatments/ayurvedic-medicines.html">Ayurvedic Medicines</a></li>
+                          <li><a href="treatments/diet-lifestyle.html">Diet & Lifestyle</a></li>
+                          <li><a href="treatments/post-treatment-care.html">Post-Treatment Care</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="patient-info.html">Patient Info</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li>
+                  <a  class="show-sub-menu">Locations <md-icon class="material-symbols-outlined">keyboard_arrow_down</md-icon></a>
+                  <div class="sub-nav-main single-list-main">
+                    <div class="sub-nav">
+                      <div class="sub-nav-list">
+                        <h4>Locations</h4>
+                        <ul>
+                          <li><a href="index.html">Kukatpally Clinic</a></li>
+                          <li><a href="manikonda.html">Manikonda Clinic</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="mobile-more-links">
+                  <a  class="show-sub-menu">More Info <md-icon class="material-symbols-outlined">keyboard_arrow_down</md-icon></a>                    
+                  <div class="sub-nav-main single-list-main">
+                    <div class="sub-nav">
+                      <div class="sub-nav-list">
+                        <h4>Treatments</h4>
+                        <ul>
+                          <li><a href="insurance-billing.html">Insurance & Billing</a></li>
+                <li><a href="videos-patient-education.html">Videos & Patient Education</a></li>
+                <li><a href="patient-recovery-stories.html">Patient Recovery Stories</a></li>
+                <li><a href="get-second-opinion.html">Get Second Opinion</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </li>
               </ul>
+                <div class="header-top-right desktop-header-info">
+                <a class="header-mobile-number" href="tel:+919299900129"><md-icon class="material-symbols-outlined">phone</md-icon>+91 9299900129</a>
+                <a class="nav-cta" href="contact.html#bookAnAppointment">Book Appointment</a>
+            </div>
             </nav>
-            <a class="nav-cta" href="contact.html#bookAnAppointment">Book Appointment</a>
-            <div class="nav-icon"><span></span><span></span><span></span></div>
-            <div class="overlay"></div>
+            <div class="nav-icon main-nav-icon"><span></span><span></span><span></span></div>
+            <div class="main-overlay overlay"></div>
+
+            <div class="extra-header-links">
+              <div class="nav-icon extra-menu"><span></span><span></span><span></span></div>
+              <div class="extra-menu-overlay"></div>
+              <ul>
+                <li><a href="insurance-billing.html">Insurance & Billing</a></li>
+                <li><a href="videos-patient-education.html">Videos & Patient Education</a></li>
+                <li><a href="patient-recovery-stories.html">Patient Recovery Stories</a></li>
+                <li><a href="get-second-opinion.html">Get Second Opinion</a></li>
+              </ul>
+            </div>             
           </div>
         </div>
-        </div>
-    </header>
+      </div>
+    </div>
+  </header>
 
    <main>
     <section class="policy-banner section">
