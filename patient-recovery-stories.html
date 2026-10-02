@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Saraja's Ayurvedic</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <div class="container nav">
+        <a id="logo" href="index.html">
+          <img src="assets/images/logo.png" alt="Dr. Saraja's Ayurvedic">
+        </a>
+        <div class="header-links">
+          <div class="header-top-info">
+            <div class="header-search">
+              <input type="search" placeholder="Search doctors, services, tests...">
+              <md-icon class="material-symbols-outlined">search</md-icon>
+            </div>
+            <div class="header-top-right">
+                <a class="header-mobile-number" href="tel:+919299900129"><md-icon class="material-symbols-outlined">phone</md-icon>+91 9299900129</a>
+                <a class="nav-cta" href="contact.html#bookAnAppointment">Book Appointment</a>
+            </div>
+          </div>
+          <div class="header-bottom">
+
+            <nav class="main-nav">
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="doctors.html">Our Doctors</a></li>
+                <li>
+                  <a class="show-sub-menu">Conditions & Symptoms <md-icon class="material-symbols-outlined">keyboard_arrow_down</md-icon></a>                    
+                  <div class="sub-nav-main">
+                    <div class="sub-nav">
+                      <div class="sub-nav-list">
+                        <h4>Conditions We Treat</h4>
+                        <ul>
+                          <li><a href="treatments/piles.html">Piles (Hemorrhoids)</a></li>
+                          <li><a href="treatments/fistula.html">Fistula</a></li>
+                          <li><a href="treatments/fissure.html">Fissure</a></li>
+                          <li><a href="treatments/pilonidal-sinus.html">Pilonidal Sinus</a></li>
+                          <li><a href="treatments/perianal-abscess.html">Perianal Abscess</a></li>
+                          <li><a href="treatments/rectal-prolapse.html">Rectal Prolapse</a></li>
+                        </ul>
+                      </div>
+                      <div class="sub-nav-list">
+                        <h4>Symptoms We Treat</h4>
+                        <ul>
+                          <li><a href="symptoms/bleeding-during-bowel-movements.html">Bleeding During Bowel Movements</a></li>
+                          <li><a href="symptoms/pain-while-passing-stool.html">Pain While Passing Stool</a></li>
+                          <li><a href="symptoms/anal-itching.html">Anal Itching</a></li>
+                          <li><a href="symptoms/anal-lump.html">Anal Lump</a></li>
+                          <li><a href="symptoms/pus-discharge.html">Pus Discharge</a></li>
+                          <li><a href="symptoms/burning-sensation.html">Burning Sensation</a></li>
+                          <li><a href="symptoms/blood-stool.html">Blood in Stool</a></li>
+                          <li><a href="symptoms/difficulty-sitting.html">Difficulty Sitting</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>                                  
+                <li>
+                  <a  class="show-sub-menu">Treatments <md-icon class="material-symbols-outlined">keyboard_arrow_down</md-icon></a>
+                  <div class="sub-nav-main two-list-main">
+                    <div class="sub-nav">
+                      <div class="sub-nav-list">
+                        <h4>Laser Treatments</h4>
+                        <ul>
+                          <li><a href="treatments/laser-surgery-piles.html">Laser Surgery for Piles</a></li>
+                          <li><a href="treatments/laser-surgery-fistula.html">Laser Surgery for Fistula</a></li>
+                          <li><a href="treatments/laser-surgery-fissure.html">Laser Surgery for Fissure</a></li>
+                          <li><a href="treatments/laser-surgery-pilonidal-sinus.html">Laser Surgery for Pilonidal Sinus</a></li>
+                          <li><a href="treatments/benefits-of-laser-surgery.html">Benefits of Laser Surgery</a></li>
+                          <li><a href="treatments/recovery-after-laser-surgery.html">Recovery After Laser Surgery</a></li>
+                        </ul>
+                      </div>
+                      <div class="sub-nav-list">
+                        <h4>Ayurvedic Treatments</h4>
+                        <ul>
+                          <li><a href="treatments/ksharasutra-therapy.html">Kshara Sutra Therapy</a></li>
+                          <li><a href="treatments/mcdpa.html">MCDPA</a></li>
+                          <li><a href="treatments/ayurvedic-medicines.html">Ayurvedic Medicines</a></li>
+                          <li><a href="treatments/diet-lifestyle.html">Diet & Lifestyle</a></li>
+                          <li><a href="treatments/post-treatment-care.html">Post-Treatment Care</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="patient-info.html">Patient Info</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li>
+                  <a  class="show-sub-menu">Locations <md-icon class="material-symbols-outlined">keyboard_arrow_down</md-icon></a>
+                  <div class="sub-nav-main single-list-main">
+                    <div class="sub-nav">
+                      <div class="sub-nav-list">
+                        <h4>Locations</h4>
+                        <ul>
+                          <li><a href="index.html">Kukatpally Clinic</a></li>
+                          <li><a href="manikonda.html">Manikonda Clinic</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="mobile-more-links">
+                  <a  class="show-sub-menu">More Info <md-icon class="material-symbols-outlined">keyboard_arrow_down</md-icon></a>                    
+                  <div class="sub-nav-main single-list-main">
+                    <div class="sub-nav">
+                      <div class="sub-nav-list">
+                        <h4>Treatments</h4>
+                        <ul>
+                          <li><a href="insurance-billing.html">Insurance & Billing</a></li>
+                          <li><a href="videos-patient-education.html">Videos & Patient Education</a></li>
+                          <li><a class="active" href="patient-recovery-stories.html">Patient Recovery Stories</a></li>
+                          <li><a href="get-second-opinion.html">Get Second Opinion</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+                <div class="header-top-right desktop-header-info">
+                <a class="header-mobile-number" href="tel:+919299900129"><md-icon class="material-symbols-outlined">phone</md-icon>+91 9299900129</a>
+                <a class="nav-cta" href="contact.html#bookAnAppointment">Book Appointment</a>
+            </div>
+            </nav>
+            <div class="nav-icon main-nav-icon"><span></span><span></span><span></span></div>
+            <div class="main-overlay overlay"></div>
+
+            <div class="extra-header-links">
+              <div class="nav-icon extra-menu"><span></span><span></span><span></span></div>
+              <div class="extra-menu-overlay"></div>
+              <ul>
+                <li><a href="insurance-billing.html">Insurance & Billing</a></li>
+                <li><a href="videos-patient-education.html">Videos & Patient Education</a></li>
+                <li><a class="active" href="patient-recovery-stories.html">Patient Recovery Stories</a></li>
+                <li><a href="get-second-opinion.html">Get Second Opinion</a></li>
+              </ul>
+            </div>             
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <main>
+    <section class="hero banner-image-layer doctors-banner" style="background-image: url(assets/images/banners/patient-recovery-stories-banner.png);">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">EXPERT GUIDANCE & PATIENT EDUCATION</span>
+          <h1>Patient Recovery Stories</h1>
+          <p>Listen to real-life accounts of patients who have successfully recovered from anorectal conditions, providing hope and insight into the healing journey.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="contact.html#bookAnAppointment">Book Appointment<md-icon class="material-symbols-outlined">arrow_right_alt</md-icon></a>
+            <a class="btn btn-outline" href="https://wa.me/919299900129" target="_blank"><md-icon class="material-symbols-outlined"><img src="assets/images/whatsapp.png" alt=""></md-icon>WhatsApp Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <section class="about-about modern-laser-surgery section">
+      <div class="container aic">
+        <div class="about-image">
+          <img src="../assets/images/patient stories-about-image.png" alt="Clinic interior">
+        </div>
+        <div class="copy">
+          <span class="eyebrow">PATIENT STORIES</span>
+          <h2>Every Recovery Journey Is Different</h2>
+          <p>Every patient’s condition, symptoms, treatment plan, and recovery journey can be different. <br> This section will feature genuine experiences shared by our patients about their treatment and care.</p>
+          <ul class="mb-0">
+            <li><md-icon class="material-symbols-outlined">check_circle</md-icon><p class="mb-0"><strong>Personalized Treatment Journey —</strong> Care is planned based on each patient’s condition and individual needs.</p></li>
+            <li><md-icon class="material-symbols-outlined">check_circle</md-icon><p class="mb-0"><strong>Recovery & Follow-up —</strong> Understand how treatment, aftercare, and follow-up support are part of the recovery journey.</p></li>
+            <li><md-icon class="material-symbols-outlined">check_circle</md-icon><p class="mb-0"><strong>Genuine Patient Experiences —</strong> Real experiences will be shared with permission to help others better understand the treatment journey.</p></li>
+          </ul>
+          <!-- <a class="btn btn-primary" href="laser-surgery-fissure.html">Explore Laser Treatment<md-icon class="material-symbols-outlined">info</md-icon></a> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-banner section">
+      <div class="container ">
+         <div class="section-head center">
+              <span class="eyebrow">WATCH &amp; LEARN</span>
+              <h2 class="white-color">Watch Our Patient Stories</h2>
+              <p>Explore videos from our YouTube channel featuring treatment information, <br> patient experiences, and guidance from our medical team.</p>
+          </div>
+          
+           <!-- Video Stories -->
+          <div class="pr-video-content">
+              <div class="pr-video-icon">
+                  <span class="material-symbols-outlined">smart_display</span>
+              </div>
+
+              <div class="pr-video-text">
+                  <h3>Explore Our Video Library</h3>
+                  <p>Watch informative videos about anorectal conditions, treatment options, recovery, and practical guidance.</p>
+              </div>
+
+              <a href="https://www.youtube.com/@drsarajasayurvedic" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Watch Videos <span class="material-symbols-outlined">play_circle</span></a>
+          </div>
+      </div>
+    </section>
+
+     <section class="patient-recovery-stories section">
+         <div class="container">            
+          <div class="two-col aic">
+            <div class="pr-stories-placeholder">
+              <div class="section-head left maxwidth100">
+                  <span class="eyebrow">REAL EXPERIENCES</span>
+                 <h2>Patient Recovery Stories</h2>
+                 <p class="mb-10">We believe that genuine patient experiences can help others understand what to expect during their treatment journey.</p>
+                 <p>We are currently collecting genuine patient experiences and feedback. Patient stories will be added here with permission from the individuals who choose to share their journey.</p>
+              </div>
+            </div>
+
+                <div class="our-appointment-form">
+                    <img src="assets/images/patient-doctor-testimonial-care-image.png" alt="Patient Testimonial">
+                </div>
+            </div>
+         </div>
+     </section>
+
+ 
+    <section class="appointment appointment-about-bg section">
+      <div class="container appointment-grid">
+        <div class="appointment-copy">
+          <span class="eyebrow">Have a Questions? Chat with porfessional</span>
+          <h2>Don't put up with pain! Make an appointment</h2>
+          <p>Make an appointment and get expert guidance for your condition.</p>
+          <form>
+            <ul class="appointment-form">
+                <li><input type="text" placeholder="Your Name"><md-icon class="material-symbols-outlined">person</md-icon></li>
+                <li><input type="tel" placeholder="Your Number"><md-icon class="material-symbols-outlined">call_log</md-icon></li>
+                <li><input type="email" placeholder="Your Email"><md-icon class="material-symbols-outlined">mail</md-icon></li>
+                <li><input type="date"></li>
+            </ul>
+            <a class="btn btn-primary"><md-icon class="material-symbols-outlined">call</md-icon> Request a Callback</a>
+          </form>
+        </div>
+        <!-- <div class="appointment-photo"><img src="assets/images/appointment-doctor2.png" alt="Doctor consultation"></div> -->
+      </div>
+    </section>
+
+     <!-- <section class="trust-banner">
+      <div class="container trust-banner-inner">
+        <div class="bubble"><md-icon class="material-icons">chat</md-icon></div>
+        <div><strong>Have Questions About Your Condition or Treatment?</strong><p>Speak with our team to understand your condition and available treatment options.</p></div>
+        <a class="btn btn-light" href="https://wa.me/919299900129" target="_blank">Message Us <md-icon class="material-symbols-outlined"><img src="assets/images/whatsapp.png" alt=""></md-icon></a>
+      </div>
+    </section> -->
+
+     <section class="trust-banner">
+      <div class="container trust-banner-inner">
+        <div class="df dfc">
+            <span class="eyebrow white-color">TAKE THE FIRST STEP</span>
+            <strong>Don't let discomfort control your day.</strong>
+            <p>Speak with our care team and schedule a private consultation at your preferred <br> Hyderabad centre.</p>
+        </div>
+        <div class="actions">
+            <a class="btn btn-light" href="tel:+919299900129">Call Now <md-icon class="material-symbols-outlined">call</md-icon></a>
+            <a class="btn btn-light" href="https://wa.me/919299900129" >Message Us <md-icon class="material-symbols-outlined"><img src="assets/images/whatsapp.png" alt=""></md-icon></a>
+        </div>
+      </div>
+    </section>
+
+
+     <!-- CTA -->
+          <!-- <div class="pr-cta">
+              <div class="pr-cta-content">
+                  <span class="pr-eyebrow">NEED GUIDANCE?</span>
+                  <h2>Have Questions About Your Condition or Treatment?</h2>
+                  <p>Speak with our team to understand your condition and available treatment options.</p>
+              </div>
+
+              <div class="pr-cta-buttons">
+                  <a href="#" class="pr-btn pr-btn-primary">Book an Appointment</a>
+                  <a href="#" class="pr-btn pr-btn-secondary">WhatsApp Now</a>
+              </div>
+          </div> -->
+
+    </main>
+
+  <footer class="footer">
+      <div class="container footer-grid">
+          <div class="footer-brand"><img src="assets/images/logo.png" alt="Dr. Saraja's Ayurvedic">
+              <p>Saraja's is one of Hyderabad's leading Ayurvedic hospitals, specializing in Ayurvedic surgery,
+                  gynecology, and Kshara Sutra Therapy. Guided by the motto "Sarve Santu Niramaya"—"Let mankind be free
+                  from diseases"—we are committed to delivering authentic, patient-centered Ayurvedic care.</p>
+              <a class="btn btn-primary" href="contact.html#bookAnAppointment">Book Appointment<md-icon class="material-symbols-outlined">arrow_right_alt</md-icon></a>
+          </div>
+          <div class="footerRight">
+              <div class="footerLinks">
+                  <h3>Treatments</h3>
+                  <ul>
+                    <li><a href="treatments/piles.html">Piles (Hemorrhoids)</a></li>
+                    <li><a href="treatments/fistula.html">Fistula</a></li>
+                    <li><a href="treatments/fissure.html">Fissure</a></li>
+                    <li><a href="treatments/pilonidal-sinus.html">Pilonidal Sinus</a></li>
+                    <li><a href="treatments/perianal-abscess.html">Perianal Abscess</a></li>
+                    <li><a href="treatments/rectal-prolapse.html">Rectal Prolapse</a></li>
+                  </ul>
+              </div>
+
+              <div class="footerLinks">
+                  <h3>Ayurvedic Treatments</h3>
+                  <ul>
+                    <li><a href="treatments/ksharasutra-therapy.html">Kshara Sutra Therapy</a></li>
+                    <li><a href="treatments/mcdpa.html">MCDPA</a></li>
+                    <li><a href="treatments/ayurvedic-medicines.html">Ayurvedic Medicines</a></li>
+                    <li><a href="treatments/diet-lifestyle.html">Diet & Lifestyle</a></li>
+                    <li><a href="treatments/post-treatment-care.html">Post-Treatment Care</a></li>
+                  </ul>
+              </div>
+
+              <div class="footerLinks">
+                <h3>Address - <span>Kukatpally</span></h3>
+                <ul>
+                    <li><p><md-icon class="material-symbols-outlined">location_on</md-icon> 3rd Floor, People's Hospital Complex, Beside Narayana Junior college, Kukatpally, Hyderabad, Telangana 500072</p></li>
+                    <li><a href="tel:+91 9299900129"><md-icon class="material-symbols-outlined">phone</md-icon>+91 9299900129</a></li>
+                    <li><a href="mailto:drvenkat.bharadwaj@gmail.com"><md-icon class="material-symbols-outlined">email</md-icon>drvenkat.bharadwaj@gmail.com</a></li>
+                </ul>
+                <br>
+                <h3>Timings</h3>
+                <ul>
+                    <li><p><md-icon class="material-symbols-outlined">access_time</md-icon> Mon-Sun: 08:00 am- 03.00 pm</p></li>
+                </ul>
+              </div>
+              
+              <div class="footerLinks">
+                <h3>Laser Treatments</h3>
+                <ul>
+                    <li><a href="treatments/laser-surgery-piles.html">Laser Surgery for Piles</a></li>
+                    <li><a href="treatments/laser-surgery-fistula.html">Laser Surgery for Fistula</a></li>
+                    <li><a href="treatments/laser-surgery-fissure.html">Laser Surgery for Fissure</a></li>
+                    <li><a href="treatments/laser-surgery-pilonidal-sinus.html">Laser Surgery for Pilonidal Sinus</a></li>
+                    <li><a href="treatments/benefits-of-laser-surgery.html">Benefits of Laser Surgery</a></li>
+                    <li><a href="treatments/recovery-after-laser-surgery.html">Recovery After Laser Surgery</a></li>
+                </ul>
+              </div>
+              
+              <div class="footerLinks">
+                <h3>Symptoms We Treat</h3>
+                <ul>
+                    <li><a href="symptoms/bleeding-during-bowel-movements.html">Bleeding During Bowel Movements</a></li>
+                    <li><a href="symptoms/pain-while-passing-stool.html">Pain While Passing Stool</a></li>
+                    <li><a href="symptoms/anal-itching.html">Anal Itching</a></li>
+                    <li><a href="symptoms/anal-lump.html">Anal Lump</a></li>
+                    <li><a href="symptoms/pus-discharge.html">Pus Discharge</a></li>
+                    <li><a href="symptoms/burning-sensation.html">Burning Sensation</a></li>
+                    <li><a href="symptoms/blood-stool.html">Blood in Stool</a></li>
+                    <li><a href="symptoms/difficulty-sitting.html">Difficulty Sitting</a></li>
+                </ul>
+              </div>
+
+              <div class="footerLinks">
+                <h3>Address - <span>Manikonda</span></h3>
+                <ul>
+                    <li><p><md-icon class="material-symbols-outlined">location_on</md-icon> 3rd Floor , Flat 302, Abhinandana Jewel, Lanco Hills Rd, , Muppas Panchavati Colony, Manikonda, Hyderabad, Telangana 500089.</p></li>
+                    <li><a href="tel:+91 9299900129"><md-icon class="material-symbols-outlined">phone</md-icon>+91 9299900129</a></li>
+                    <li><a href="mailto:drvenkat.bharadwaj@gmail.com"><md-icon class="material-symbols-outlined">email</md-icon>drvenkat.bharadwaj@gmail.com</a></li>
+                </ul>
+                <br>
+                <h3>Timings</h3>
+                <ul>
+                    <li>
+                        <p><md-icon class="material-symbols-outlined">access_time</md-icon> Mon-Sun: 08:00 am- 03.00 pm</p>
+                    </li>
+                </ul>
+              </div>
+          </div>
+      </div>
+      <div class="footer-social">
+          <div class="container">
+            <span>FollowUs</span>
+            <ul>
+                <li><a target="_blank" href="https://www.facebook.com/drsarajasayurvedic"><img src="assets/images/facebook-icon.png" alt="facebook"></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/dr.sarajasayurvedic/"><img src="assets/images/instagram-icon.png" alt="instagram"></a></li>
+                <li><a target="_blank" href="https://youtube.com/channel/UCd_9b1OWnJ2r-Knu-WOLP_A"><img src="assets/images/youtube-icon.png" alt="youtube"></a></li>
+                <li><a target="_blank" href="https://x.com/DrSarajas"><img src="assets/images/x-icon.png" alt="Twitter"></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/company/drsarajasayurvedic/"><img src="assets/images/linkedin-icon.png" alt="linkedin"></a></li>
+                <li><a target="_blank" href="https://in.pinterest.com/sarajasayurveda/"><img src="assets/images/pinterest-icon.png" alt="pinterest"></a></li>
+            </ul>
+            <span class="push">Sign in and don’t miss anything!</span></div>
+      </div>
+      <div class="copyright">
+          <div class="container">
+            <ul>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+                <li><a href="refund-cancellation-policy.html">Refund Policy</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="policies-guidelines.html">Policies & Guidelines</a></li>
+                <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                <li><a href="accessibility-statement.html">Accessibility Statement</a></li>
+            </ul>
+            <p>© Copyright Saraja's <span id="yearUpdate"></span>. All Right Reserved.</p></div>
+      </div>
+  </footer>
+
+  <a href="javascript:void(0)" class="back-to-top" onclick="$('html,body').animate({scrollTop:0},500);"></a>
+  <script src="assets/js/global.js"></script>
+  <script>
+    
+  </script>
+</body>
+</html>

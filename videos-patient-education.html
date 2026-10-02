@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Saraja's Ayurvedic</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="assets/js/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <div class="container nav">
+        <a id="logo" href="index.html">
+          <img src="assets/images/logo.png" alt="Dr. Saraja's Ayurvedic">
+        </a>
+        <div class="header-links">
+          <div class="header-top-info">
+            <div class="header-search">
+              <input type="search" placeholder="Search doctors, services, tests...">
+              <md-icon class="material-symbols-outlined">search</md-icon>
+            </div>
+            <div class="header-top-right">
+                <a class="header-mobile-number" href="tel:+919299900129"><md-icon class="material-symbols-outlined">phone</md-icon>+91 9299900129</a>
+                <a class="nav-cta" href="contact.html#bookAnAppointment">Book Appointment</a>
+            </div>
+          </div>
+          <div class="header-bottom">
+
+            <nav class="main-nav">
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="doctors.html">Our Doctors</a></li>
+                <li>
+                  <a class="show-sub-menu">Conditions & Symptoms <md-icon class="material-symbols-outlined">keyboard_arrow_down</md-icon></a>                    
+                  <div class="sub-nav-main">
+                    <div class="sub-nav">
+                      <div class="sub-nav-list">
+                        <h4>Conditions We Treat</h4>
+                        <ul>
+                          <li><a href="treatments/piles.html">Piles (Hemorrhoids)</a></li>
+                          <li><a href="treatments/fistula.html">Fistula</a></li>
+                          <li><a href="treatments/fissure.html">Fissure</a></li>
+                          <li><a href="treatments/pilonidal-sinus.html">Pilonidal Sinus</a></li>
+                          <li><a href="treatments/perianal-abscess.html">Perianal Abscess</a></li>
+                          <li><a href="treatments/rectal-prolapse.html">Rectal Prolapse</a></li>
+                        </ul>
+                      </div>
+                      <div class="sub-nav-list">
+                        <h4>Symptoms We Treat</h4>
+                        <ul>
+                          <li><a href="symptoms/bleeding-during-bowel-movements.html">Bleeding During Bowel Movements</a></li>
+                          <li><a href="symptoms/pain-while-passing-stool.html">Pain While Passing Stool</a></li>
+                          <li><a href="symptoms/anal-itching.html">Anal Itching</a></li>
+                          <li><a href="symptoms/anal-lump.html">Anal Lump</a></li>
+                          <li><a href="symptoms/pus-discharge.html">Pus Discharge</a></li>
+                          <li><a href="symptoms/burning-sensation.html">Burning Sensation</a></li>
+                          <li><a href="symptoms/blood-stool.html">Blood in Stool</a></li>
+                          <li><a href="symptoms/difficulty-sitting.html">Difficulty Sitting</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>                                  
+                <li>
+                  <a  class="show-sub-menu">Treatments <md-icon class="material-symbols-outlined">keyboard_arrow_down</md-icon></a>
+                  <div class="sub-nav-main two-list-main">
+                    <div class="sub-nav">
+                      <div class="sub-nav-list">
+                        <h4>Laser Treatments</h4>
+                        <ul>
+                          <li><a href="treatments/laser-surgery-piles.html">Laser Surgery for Piles</a></li>
+                          <li><a href="treatments/laser-surgery-fistula.html">Laser Surgery for Fistula</a></li>
+                          <li><a href="treatments/laser-surgery-fissure.html">Laser Surgery for Fissure</a></li>
+                          <li><a href="treatments/laser-surgery-pilonidal-sinus.html">Laser Surgery for Pilonidal Sinus</a></li>
+                          <li><a href="treatments/benefits-of-laser-surgery.html">Benefits of Laser Surgery</a></li>
+                          <li><a href="treatments/recovery-after-laser-surgery.html">Recovery After Laser Surgery</a></li>
+                        </ul>
+                      </div>
+                      <div class="sub-nav-list">
+                        <h4>Ayurvedic Treatments</h4>
+                        <ul>
+                          <li><a href="treatments/ksharasutra-therapy.html">Kshara Sutra Therapy</a></li>
+                          <li><a href="treatments/mcdpa.html">MCDPA</a></li>
+                          <li><a href="treatments/ayurvedic-medicines.html">Ayurvedic Medicines</a></li>
+                          <li><a href="treatments/diet-lifestyle.html">Diet & Lifestyle</a></li>
+                          <li><a href="treatments/post-treatment-care.html">Post-Treatment Care</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="patient-info.html">Patient Info</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li>
+                  <a  class="show-sub-menu">Locations <md-icon class="material-symbols-outlined">keyboard_arrow_down</md-icon></a>
+                  <div class="sub-nav-main single-list-main">
+                    <div class="sub-nav">
+                      <div class="sub-nav-list">
+                        <h4>Locations</h4>
+                        <ul>
+                          <li><a href="index.html">Kukatpally Clinic</a></li>
+                          <li><a href="manikonda.html">Manikonda Clinic</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="mobile-more-links">
+                  <a  class="show-sub-menu">More Info <md-icon class="material-symbols-outlined">keyboard_arrow_down</md-icon></a>                    
+                  <div class="sub-nav-main single-list-main">
+                    <div class="sub-nav">
+                      <div class="sub-nav-list">
+                        <h4>Treatments</h4>
+                        <ul>
+                          <li><a href="insurance-billing.html">Insurance & Billing</a></li>
+                          <li><a class="active" href="videos-patient-education.html">Videos & Patient Education</a></li>
+                          <li><a href="patient-recovery-stories.html">Patient Recovery Stories</a></li>
+                          <li><a href="get-second-opinion.html">Get Second Opinion</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+                <div class="header-top-right desktop-header-info">
+                <a class="header-mobile-number" href="tel:+919299900129"><md-icon class="material-symbols-outlined">phone</md-icon>+91 9299900129</a>
+                <a class="nav-cta" href="contact.html#bookAnAppointment">Book Appointment</a>
+            </div>
+            </nav>
+            <div class="nav-icon main-nav-icon"><span></span><span></span><span></span></div>
+            <div class="main-overlay overlay"></div>
+
+            <div class="extra-header-links">
+              <div class="nav-icon extra-menu"><span></span><span></span><span></span></div>
+              <div class="extra-menu-overlay"></div>
+              <ul>
+                <li><a href="insurance-billing.html">Insurance & Billing</a></li>
+                <li><a class="active" href="videos-patient-education.html">Videos & Patient Education</a></li>
+                <li><a href="patient-recovery-stories.html">Patient Recovery Stories</a></li>
+                <li><a href="get-second-opinion.html">Get Second Opinion</a></li>
+              </ul>
+            </div>             
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <main>
+    <section class="hero banner-image-layer doctors-banner" style="background-image: url(assets/images/banners/videos-patient-education-banner.png);">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">EXPERT GUIDANCE & PATIENT EDUCATION</span>
+          <h1>Videos & Patient Education</h1>
+          <p>Watch expert-led videos to understand piles, fistula, fissure, pilonidal sinus, and other anorectal conditions, along with Ayurvedic and laser treatment options.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="contact.html#bookAnAppointment">Book Appointment<md-icon class="material-symbols-outlined">arrow_right_alt</md-icon></a>
+            <a class="btn btn-outline" href="https://wa.me/919299900129" target="_blank"><md-icon class="material-symbols-outlined"><img src="assets/images/whatsapp.png" alt=""></md-icon>WhatsApp Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <section class="dd-video-articles section">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">EXPLORE OUR VIDEO LIBRARY</span>
+          <h2>Learn More. Understand Better. Heal Better.</h2>
+          <p>Explore our collection of informative videos featuring expert guidance <br> on anorectal conditions, treatment options, recovery, and practical tips for better care and comfort.</p>
+        </div>
+
+        <div class="vp-video-page">
+          <!-- Video Tabs -->
+          <div class="vp-video-tabs">
+              <button type="button" class="vp-video-tab active" data-tab="all">All Videos</button>
+              <button type="button" class="vp-video-tab" data-tab="doctor">Doctor Explains</button>
+              <button type="button" class="vp-video-tab" data-tab="treatment">Treatment Information</button>
+              <button type="button" class="vp-video-tab" data-tab="lifestyle">Health &amp; Lifestyle</button>
+          </div>
+
+          <!-- Video Cards -->
+          <div class="vp-video-page-grid">
+
+              <!-- 01 -->
+              <a href="https://www.youtube.com/watch?v=BZrfCg3mZzQ" target="_blank" rel="noopener noreferrer" class="vp-video-card" data-category="treatment">
+                  <div class="vp-video-thumb">
+                      <img src="https://img.youtube.com/vi/BZrfCg3mZzQ/maxresdefault.jpg" alt="Advanced Laser Treatment for Piles, Fissures and Fistulas">
+                      <span class="vp-video-play"><span class="material-symbols-outlined">play_arrow</span></span>
+                  </div>
+                  <div class="vp-video-content">
+                      <h3>Advanced Laser Treatment for Piles, Fissures &amp; Fistulas</h3>
+                      <span class="vp-video-category">Treatment Information</span>
+                      <span class="vp-video-link material-symbols-outlined">open_in_new</span>
+                  </div>
+              </a>
+
+              <!-- 02 -->
+              <a href="https://www.youtube.com/watch?v=8pacOpWZiOI" target="_blank" rel="noopener noreferrer" class="vp-video-card" data-category="treatment">
+                  <div class="vp-video-thumb">
+                      <img src="https://img.youtube.com/vi/8pacOpWZiOI/maxresdefault.jpg" alt="Healing Fistula the Ayurvedic Way Kshar Sutra Explained">
+                      <span class="vp-video-play"><span class="material-symbols-outlined">play_arrow</span></span>
+                  </div>
+                  <div class="vp-video-content">
+                      <h3>Healing Fistula the Ayurvedic Way: Kshar Sutra Explained</h3>
+                      <span class="vp-video-category">Treatment Information</span>
+                      <span class="vp-video-link material-symbols-outlined">open_in_new</span>
+                  </div>
+              </a>
+
+              <!-- 03 -->
+              <a href="https://www.youtube.com/watch?v=og4KqYaXQGM" target="_blank" rel="noopener noreferrer" class="vp-video-card" data-category="treatment">
+                  <div class="vp-video-thumb">
+                      <img src="https://img.youtube.com/vi/og4KqYaXQGM/maxresdefault.jpg" alt="Heal Fissures Naturally with Ayurveda">
+                      <span class="vp-video-play"><span class="material-symbols-outlined">play_arrow</span></span>
+                  </div>
+                  <div class="vp-video-content">
+                      <h3>Heal Fissures Naturally with Ayurveda</h3>
+                      <span class="vp-video-category">Treatment Information</span>
+                      <span class="vp-video-link material-symbols-outlined">open_in_new</span>
+                  </div>
+              </a>
+
+              <!-- 04 -->
+              <a href="https://www.youtube.com/watch?v=9jfF2tSTMig" target="_blank" rel="noopener noreferrer" class="vp-video-card" data-category="treatment">
+                  <div class="vp-video-thumb">
+                      <img src="https://img.youtube.com/vi/9jfF2tSTMig/maxresdefault.jpg" alt="Heal Fistula-in-Ano the Natural Way With Ayurveda">
+                      <span class="vp-video-play"><span class="material-symbols-outlined">play_arrow</span></span>
+                  </div>
+                  <div class="vp-video-content">
+                      <h3>Heal Fistula-in-Ano the Natural Way with Ayurveda</h3>
+                      <span class="vp-video-category">Treatment Information</span>
+                      <span class="vp-video-link material-symbols-outlined">open_in_new</span>
+                  </div>
+              </a>
+
+              <!-- 05 -->
+              <a href="https://www.youtube.com/watch?v=kXpsSh3Czcw" target="_blank" rel="noopener noreferrer" class="vp-video-card" data-category="doctor">
+                  <div class="vp-video-thumb">
+                      <img src="https://img.youtube.com/vi/kXpsSh3Czcw/maxresdefault.jpg" alt="Piles Explained in Simple Words">
+                      <span class="vp-video-play"><span class="material-symbols-outlined">play_arrow</span></span>
+                  </div>
+                  <div class="vp-video-content">
+                      <h3>Piles Explained in Simple Words</h3>
+                      <span class="vp-video-category">Doctor Explains</span>
+                      <span class="vp-video-link material-symbols-outlined">open_in_new</span>
+                  </div>
+              </a>
+
+              <!-- 06 -->
+              <a href="https://www.youtube.com/watch?v=xKF1uufx2oU" target="_blank" rel="noopener noreferrer" class="vp-video-card" data-category="doctor">
+                  <div class="vp-video-thumb">
+                      <img src="https://img.youtube.com/vi/xKF1uufx2oU/maxresdefault.jpg" alt="Is It Piles or Fissure">
+                      <span class="vp-video-play"><span class="material-symbols-outlined">play_arrow</span></span>
+                  </div>
+                  <div class="vp-video-content">
+                      <h3>Is It Piles or Fissure? Symptoms &amp; Treatment</h3>
+                      <span class="vp-video-category">Doctor Explains</span>
+                      <span class="vp-video-link material-symbols-outlined">open_in_new</span>
+                  </div>
+              </a>
+
+              <!-- 07 -->
+              <a href="https://www.youtube.com/watch?v=4ICNF2-Umm0" target="_blank" rel="noopener noreferrer" class="vp-video-card" data-category="doctor">
+                  <div class="vp-video-thumb">
+                      <img src="https://img.youtube.com/vi/4ICNF2-Umm0/maxresdefault.jpg" alt="Fistula-in-Ano Causes Symptoms and Ayurvedic Treatment">
+                      <span class="vp-video-play"><span class="material-symbols-outlined">play_arrow</span></span>
+                  </div>
+                  <div class="vp-video-content">
+                      <h3>Fistula-in-Ano: Causes, Symptoms &amp; Treatment</h3>
+                      <span class="vp-video-category">Doctor Explains</span>
+                      <span class="vp-video-link material-symbols-outlined">open_in_new</span>
+                  </div>
+              </a>
+
+              <!-- 08 -->
+              <a href="https://www.youtube.com/watch?v=9eEA3VLptvA" target="_blank" rel="noopener noreferrer" class="vp-video-card" data-category="doctor">
+                  <div class="vp-video-thumb">
+                      <img src="https://img.youtube.com/vi/9eEA3VLptvA/maxresdefault.jpg" alt="Fissure Fistula and Piles Simple Ayurvedic Tips">
+                      <span class="vp-video-play"><span class="material-symbols-outlined">play_arrow</span></span>
+                  </div>
+                  <div class="vp-video-content">
+                      <h3>Fissure, Fistula &amp; Piles: Simple Ayurvedic Tips</h3>
+                      <span class="vp-video-category">Doctor Explains</span>
+                      <span class="vp-video-link material-symbols-outlined">open_in_new</span>
+                  </div>
+              </a>
+
+              <!-- 09 -->
+              <a href="https://www.youtube.com/watch?v=hr-E1Za6UQY" target="_blank" rel="noopener noreferrer" class="vp-video-card" data-category="treatment">
+                  <div class="vp-video-thumb">
+                      <img src="https://img.youtube.com/vi/hr-E1Za6UQY/maxresdefault.jpg" alt="Fissure Causes Symptoms and Ayurvedic Treatment">
+                      <span class="vp-video-play"><span class="material-symbols-outlined">play_arrow</span></span>
+                  </div>
+                  <div class="vp-video-content">
+                      <h3>Fissure Causes, Symptoms &amp; Ayurvedic Treatment</h3>
+                      <span class="vp-video-category">Treatment Information</span>
+                      <span class="vp-video-link material-symbols-outlined">open_in_new</span>
+                  </div>
+              </a>
+
+              <!-- 10 -->
+              <a href="https://www.youtube.com/watch?v=HJ2TeCWtC58" target="_blank" rel="noopener noreferrer" class="vp-video-card" data-category="lifestyle">
+                  <div class="vp-video-thumb">
+                      <img src="https://img.youtube.com/vi/HJ2TeCWtC58/maxresdefault.jpg" alt="Using Your Phone in the Bathroom for Long Hours Can Lead to Piles">
+                      <span class="vp-video-play"><span class="material-symbols-outlined">play_arrow</span></span>
+                  </div>
+                  <div class="vp-video-content">
+                      <h3>Using Your Phone in the Bathroom for Long Hours? It Can Lead to Piles!</h3>
+                      <span class="vp-video-category">Health &amp; Lifestyle</span>
+                      <span class="vp-video-link material-symbols-outlined">open_in_new</span>
+                  </div>
+              </a>
+
+              <!-- 11 -->
+              <a href="https://www.youtube.com/watch?v=3xiL-wLOqN4" target="_blank" rel="noopener noreferrer" class="vp-video-card" data-category="treatment">
+                  <div class="vp-video-thumb">
+                      <img src="https://img.youtube.com/vi/3xiL-wLOqN4/maxresdefault.jpg" alt="Best Piles Treatment in Kukatpally and Manikonda">
+                      <span class="vp-video-play"><span class="material-symbols-outlined">play_arrow</span></span>
+                  </div>
+                  <div class="vp-video-content">
+                      <h3>Say Goodbye to Piles – Treatment in Kukatpally &amp; Manikonda</h3>
+                      <span class="vp-video-category">Treatment Information</span>
+                      <span class="vp-video-link material-symbols-outlined">open_in_new</span>
+                  </div>
+              </a>
+
+              <!-- 12 -->
+              <a href="https://www.youtube.com/watch?v=UXx2wKyHr84" target="_blank" rel="noopener noreferrer" class="vp-video-card" data-category="doctor">
+                  <div class="vp-video-thumb">
+                      <img src="https://img.youtube.com/vi/UXx2wKyHr84/maxresdefault.jpg" alt="Pain and Discomfort of a Fissure">
+                      <span class="vp-video-play"><span class="material-symbols-outlined">play_arrow</span></span>
+                  </div>
+                  <div class="vp-video-content">
+                      <h3>Are You Struggling with the Pain and Discomfort of a Fissure?</h3>
+                      <span class="vp-video-category">Doctor Explains</span>
+                      <span class="vp-video-link material-symbols-outlined">open_in_new</span>
+                  </div>
+              </a>
+
+              <!-- 13 -->
+              <a href="https://www.youtube.com/watch?v=XHgmrBthGXU" target="_blank" rel="noopener noreferrer" class="vp-video-card" data-category="treatment">
+                  <div class="vp-video-thumb">
+                      <img src="https://img.youtube.com/vi/XHgmrBthGXU/maxresdefault.jpg" alt="Fistula Treatment and Piles Treatment Without Operation">
+                      <span class="vp-video-play"><span class="material-symbols-outlined">play_arrow</span></span>
+                  </div>
+                  <div class="vp-video-content">
+                      <h3>Fistula Treatment &amp; Piles Treatment Without Operation</h3>
+                      <span class="vp-video-category">Treatment Information</span>
+                      <span class="vp-video-link material-symbols-outlined">open_in_new</span>
+                  </div>
+              </a>
+
+              <!-- 14 -->
+              <a href="https://www.youtube.com/watch?v=eMtvj54WVow" target="_blank" rel="noopener noreferrer" class="vp-video-card" data-category="treatment">
+                  <div class="vp-video-thumb">
+                      <img src="https://img.youtube.com/vi/eMtvj54WVow/maxresdefault.jpg" alt="Effective Ayurvedic Treatment for Fistula-in-Ano">
+                      <span class="vp-video-play"><span class="material-symbols-outlined">play_arrow</span></span>
+                  </div>
+                  <div class="vp-video-content">
+                      <h3>Effective Ayurvedic Treatment for Fistula-in-Ano</h3>
+                      <span class="vp-video-category">Treatment Information</span>
+                      <span class="vp-video-link material-symbols-outlined">open_in_new</span>
+                  </div>
+              </a>
+
+              <!-- 15 -->
+              <a href="https://www.youtube.com/watch?v=jsSfGf3EZW0" target="_blank" rel="noopener noreferrer" class="vp-video-card" data-category="treatment">
+                  <div class="vp-video-thumb">
+                      <img src="https://img.youtube.com/vi/jsSfGf3EZW0/maxresdefault.jpg" alt="Piles Treatment Without Operation in Telugu">
+                      <span class="vp-video-play"><span class="material-symbols-outlined">play_arrow</span></span>
+                  </div>
+                  <div class="vp-video-content">
+                      <h3>పైల్స్ నివారణ – Ayurvedic Treatment Without Operation</h3>
+                      <span class="vp-video-category">Treatment Information</span>
+                      <span class="vp-video-link material-symbols-outlined">open_in_new</span>
+                  </div>
+              </a>
+
+              <!-- 16 -->
+              <a href="https://www.youtube.com/watch?v=RwSpeuShVrU" target="_blank" rel="noopener noreferrer" class="vp-video-card" data-category="treatment">
+                  <div class="vp-video-thumb">
+                      <img src="https://img.youtube.com/vi/RwSpeuShVrU/maxresdefault.jpg" alt="Permanent Solution for Fissure with Ayurveda">
+                      <span class="vp-video-play"><span class="material-symbols-outlined">play_arrow</span></span>
+                  </div>
+                  <div class="vp-video-content">
+                      <h3>ఫిషర్‌కు ఆయుర్వేద చికిత్స ద్వారా పరిష్కారం</h3>
+                      <span class="vp-video-category">Treatment Information</span>
+                      <span class="vp-video-link material-symbols-outlined">open_in_new</span>
+                  </div>
+              </a>
+
+              <!-- 17 -->
+              <a href="https://www.youtube.com/watch?v=lcfHl8UZqPY" target="_blank" rel="noopener noreferrer" class="vp-video-card" data-category="treatment">
+                  <div class="vp-video-thumb">
+                      <img src="https://img.youtube.com/vi/lcfHl8UZqPY/maxresdefault.jpg" alt="Ayurvedic Kshara Karma Treatment for Piles">
+                      <span class="vp-video-play"><span class="material-symbols-outlined">play_arrow</span></span>
+                  </div>
+                  <div class="vp-video-content">
+                      <h3>Ayurvedic Kshara Karma Treatment for Piles</h3>
+                      <span class="vp-video-category">Treatment Information</span>
+                      <span class="vp-video-link material-symbols-outlined">open_in_new</span>
+                  </div>
+              </a>
+
+              <!-- 18 -->
+              <a href="https://www.youtube.com/watch?v=yiO9j-8jYdI" target="_blank" rel="noopener noreferrer" class="vp-video-card" data-category="treatment">
+                  <div class="vp-video-thumb">
+                      <img src="https://img.youtube.com/vi/yiO9j-8jYdI/maxresdefault.jpg" alt="Ayurvedic Treatment Video">
+                      <span class="vp-video-play"><span class="material-symbols-outlined">play_arrow</span></span>
+                  </div>
+                  <div class="vp-video-content">
+                      <h3>Ayurvedic Treatment Video</h3>
+                      <span class="vp-video-category">Treatment Information</span>
+                      <span class="vp-video-link material-symbols-outlined">open_in_new</span>
+                  </div>
+              </a>
+
+              <!-- 19 -->
+              <a href="https://www.youtube.com/watch?v=32cOFEmE0tc" target="_blank" rel="noopener noreferrer" class="vp-video-card" data-category="treatment">
+                  <div class="vp-video-thumb">
+                      <img src="https://img.youtube.com/vi/32cOFEmE0tc/maxresdefault.jpg" alt="Ayurvedic Treatment Video">
+                      <span class="vp-video-play"><span class="material-symbols-outlined">play_arrow</span></span>
+                  </div>
+                  <div class="vp-video-content">
+                      <h3>Ayurvedic Treatment Video</h3>
+                      <span class="vp-video-category">Treatment Information</span>
+                      <span class="vp-video-link material-symbols-outlined">open_in_new</span>
+                  </div>
+              </a>
+
+              <!-- 20 -->
+              <a href="https://www.youtube.com/watch?v=CGNeI2vSRHk" target="_blank" rel="noopener noreferrer" class="vp-video-card" data-category="treatment">
+                  <div class="vp-video-thumb">
+                      <img src="https://img.youtube.com/vi/CGNeI2vSRHk/maxresdefault.jpg" alt="Ayurvedic Treatment Video">
+                      <span class="vp-video-play"><span class="material-symbols-outlined">play_arrow</span></span>
+                  </div>
+                  <div class="vp-video-content">
+                      <h3>Ayurvedic Treatment Video</h3>
+                      <span class="vp-video-category">Treatment Information</span>
+                      <span class="vp-video-link material-symbols-outlined">open_in_new</span>
+                  </div>
+              </a>
+
+          </div>
+        </div>
+
+
+        <div class="actions jcc mb-0">
+              <a class="btn btn-primary" href="https://www.youtube.com/channel/UCd_9b1OWnJ2r-Knu-WOLP_A" target="_blank">
+                  <md-icon class="material-icons">play_circle</md-icon>
+                  View All Videos on YouTube
+              </a>
+        </div>
+    </div>
+    </section>
+ 
+    <section class="appointment appointment-about-bg section">
+      <div class="container appointment-grid">
+        <div class="appointment-copy">
+          <span class="eyebrow">Have a Questions? Chat with porfessional</span>
+          <h2>Don't put up with pain! Make an appointment</h2>
+          <p>Make an appointment and get expert guidance for your condition.</p>
+          <form>
+            <ul class="appointment-form">
+                <li><input type="text" placeholder="Your Name"><md-icon class="material-symbols-outlined">person</md-icon></li>
+                <li><input type="tel" placeholder="Your Number"><md-icon class="material-symbols-outlined">call_log</md-icon></li>
+                <li><input type="email" placeholder="Your Email"><md-icon class="material-symbols-outlined">mail</md-icon></li>
+                <li><input type="date"></li>
+            </ul>
+            <a class="btn btn-primary"><md-icon class="material-symbols-outlined">call</md-icon> Request a Callback</a>
+          </form>
+        </div>
+        <!-- <div class="appointment-photo"><img src="assets/images/appointment-doctor2.png" alt="Doctor consultation"></div> -->
+      </div>
+    </section>
+
+     <section class="trust-banner">
+      <div class="container trust-banner-inner">
+        <div class="bubble"><md-icon class="material-icons">chat</md-icon></div>
+        <div><strong>Don't let discomfort control your day.</strong><p>Speak with our care team and schedule a private consultation at your preferred Hyderabad centre.</p></div>
+        <a class="btn btn-light" href="https://wa.me/919299900129" target="_blank">Message Us <md-icon class="material-symbols-outlined"><img src="assets/images/whatsapp.png" alt=""></md-icon></a>
+      </div>
+    </section>
+
+    </main>
+
+  <footer class="footer">
+      <div class="container footer-grid">
+          <div class="footer-brand"><img src="assets/images/logo.png" alt="Dr. Saraja's Ayurvedic">
+              <p>Saraja's is one of Hyderabad's leading Ayurvedic hospitals, specializing in Ayurvedic surgery,
+                  gynecology, and Kshara Sutra Therapy. Guided by the motto "Sarve Santu Niramaya"—"Let mankind be free
+                  from diseases"—we are committed to delivering authentic, patient-centered Ayurvedic care.</p>
+              <a class="btn btn-primary" href="contact.html#bookAnAppointment">Book Appointment<md-icon class="material-symbols-outlined">arrow_right_alt</md-icon></a>
+          </div>
+          <div class="footerRight">
+              <div class="footerLinks">
+                  <h3>Treatments</h3>
+                  <ul>
+                    <li><a href="treatments/piles.html">Piles (Hemorrhoids)</a></li>
+                    <li><a href="treatments/fistula.html">Fistula</a></li>
+                    <li><a href="treatments/fissure.html">Fissure</a></li>
+                    <li><a href="treatments/pilonidal-sinus.html">Pilonidal Sinus</a></li>
+                    <li><a href="treatments/perianal-abscess.html">Perianal Abscess</a></li>
+                    <li><a href="treatments/rectal-prolapse.html">Rectal Prolapse</a></li>
+                  </ul>
+              </div>
+
+              <div class="footerLinks">
+                  <h3>Ayurvedic Treatments</h3>
+                  <ul>
+                    <li><a href="treatments/ksharasutra-therapy.html">Kshara Sutra Therapy</a></li>
+                    <li><a href="treatments/mcdpa.html">MCDPA</a></li>
+                    <li><a href="treatments/ayurvedic-medicines.html">Ayurvedic Medicines</a></li>
+                    <li><a href="treatments/diet-lifestyle.html">Diet & Lifestyle</a></li>
+                    <li><a href="treatments/post-treatment-care.html">Post-Treatment Care</a></li>
+                  </ul>
+              </div>
+
+              <div class="footerLinks">
+                <h3>Address - <span>Kukatpally</span></h3>
+                <ul>
+                    <li><p><md-icon class="material-symbols-outlined">location_on</md-icon> 3rd Floor, People's Hospital Complex, Beside Narayana Junior college, Kukatpally, Hyderabad, Telangana 500072</p></li>
+                    <li><a href="tel:+91 9299900129"><md-icon class="material-symbols-outlined">phone</md-icon>+91 9299900129</a></li>
+                    <li><a href="mailto:drvenkat.bharadwaj@gmail.com"><md-icon class="material-symbols-outlined">email</md-icon>drvenkat.bharadwaj@gmail.com</a></li>
+                </ul>
+                <br>
+                <h3>Timings</h3>
+                <ul>
+                    <li><p><md-icon class="material-symbols-outlined">access_time</md-icon> Mon-Sun: 08:00 am- 03.00 pm</p></li>
+                </ul>
+              </div>
+              
+              <div class="footerLinks">
+                <h3>Laser Treatments</h3>
+                <ul>
+                    <li><a href="treatments/laser-surgery-piles.html">Laser Surgery for Piles</a></li>
+                    <li><a href="treatments/laser-surgery-fistula.html">Laser Surgery for Fistula</a></li>
+                    <li><a href="treatments/laser-surgery-fissure.html">Laser Surgery for Fissure</a></li>
+                    <li><a href="treatments/laser-surgery-pilonidal-sinus.html">Laser Surgery for Pilonidal Sinus</a></li>
+                    <li><a href="treatments/benefits-of-laser-surgery.html">Benefits of Laser Surgery</a></li>
+                    <li><a href="treatments/recovery-after-laser-surgery.html">Recovery After Laser Surgery</a></li>
+                </ul>
+              </div>
+              
+              <div class="footerLinks">
+                <h3>Symptoms We Treat</h3>
+                <ul>
+                    <li><a href="symptoms/bleeding-during-bowel-movements.html">Bleeding During Bowel Movements</a></li>
+                    <li><a href="symptoms/pain-while-passing-stool.html">Pain While Passing Stool</a></li>
+                    <li><a href="symptoms/anal-itching.html">Anal Itching</a></li>
+                    <li><a href="symptoms/anal-lump.html">Anal Lump</a></li>
+                    <li><a href="symptoms/pus-discharge.html">Pus Discharge</a></li>
+                    <li><a href="symptoms/burning-sensation.html">Burning Sensation</a></li>
+                    <li><a href="symptoms/blood-stool.html">Blood in Stool</a></li>
+                    <li><a href="symptoms/difficulty-sitting.html">Difficulty Sitting</a></li>
+                </ul>
+              </div>
+
+              <div class="footerLinks">
+                <h3>Address - <span>Manikonda</span></h3>
+                <ul>
+                    <li><p><md-icon class="material-symbols-outlined">location_on</md-icon> 3rd Floor , Flat 302, Abhinandana Jewel, Lanco Hills Rd, , Muppas Panchavati Colony, Manikonda, Hyderabad, Telangana 500089.</p></li>
+                    <li><a href="tel:+91 9299900129"><md-icon class="material-symbols-outlined">phone</md-icon>+91 9299900129</a></li>
+                    <li><a href="mailto:drvenkat.bharadwaj@gmail.com"><md-icon class="material-symbols-outlined">email</md-icon>drvenkat.bharadwaj@gmail.com</a></li>
+                </ul>
+                <br>
+                <h3>Timings</h3>
+                <ul>
+                    <li>
+                        <p><md-icon class="material-symbols-outlined">access_time</md-icon> Mon-Sun: 08:00 am- 03.00 pm</p>
+                    </li>
+                </ul>
+              </div>
+          </div>
+      </div>
+      <div class="footer-social">
+          <div class="container">
+            <span>FollowUs</span>
+            <ul>
+                <li><a target="_blank" href="https://www.facebook.com/drsarajasayurvedic"><img src="assets/images/facebook-icon.png" alt="facebook"></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/dr.sarajasayurvedic/"><img src="assets/images/instagram-icon.png" alt="instagram"></a></li>
+                <li><a target="_blank" href="https://youtube.com/channel/UCd_9b1OWnJ2r-Knu-WOLP_A"><img src="assets/images/youtube-icon.png" alt="youtube"></a></li>
+                <li><a target="_blank" href="https://x.com/DrSarajas"><img src="assets/images/x-icon.png" alt="Twitter"></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/company/drsarajasayurvedic/"><img src="assets/images/linkedin-icon.png" alt="linkedin"></a></li>
+                <li><a target="_blank" href="https://in.pinterest.com/sarajasayurveda/"><img src="assets/images/pinterest-icon.png" alt="pinterest"></a></li>
+            </ul>
+            <span class="push">Sign in and don’t miss anything!</span></div>
+      </div>
+      <div class="copyright">
+          <div class="container">
+            <ul>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+                <li><a href="refund-cancellation-policy.html">Refund Policy</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="policies-guidelines.html">Policies & Guidelines</a></li>
+                <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                <li><a href="accessibility-statement.html">Accessibility Statement</a></li>
+            </ul>
+            <p>© Copyright Saraja's <span id="yearUpdate"></span>. All Right Reserved.</p></div>
+      </div>
+  </footer>
+
+  <a href="javascript:void(0)" class="back-to-top" onclick="$('html,body').animate({scrollTop:0},500);"></a>
+  <script src="assets/js/global.js"></script>
+  <script>
+    $('.vp-video-tab').on('click', function () {
+        const category = $(this).data('tab');
+
+        $('.vp-video-tab').removeClass('active');
+        $(this).addClass('active');
+
+        if (category === 'all') {
+            $('.vp-video-card').stop(true, true).fadeIn(200);
+        } else {
+            $('.vp-video-card').stop(true, true).hide();
+            $('.vp-video-card[data-category="' + category + '"]').stop(true, true).fadeIn(200);
+        }
+    });
+  </script>
+</body>
+</html>
