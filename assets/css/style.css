@@ -531,6 +531,14 @@ ul {
     line-height: 24px;
 }
 
+.header-mobile-number:hover {
+    color: var(--gold);
+}
+
+.header-mobile-number:hover md-icon {
+    background-color: var(--gold);
+}
+
 .header-mobile-number md-icon {
     font-size: 16px;
     background: var(--green);
@@ -581,10 +589,11 @@ ul {
 }
 
 .extra-header-links ul li {
-    margin: 3px 0;
+    margin: 5px 0;
 }
 
-.extra-header-links ul li a:hover {
+.extra-header-links ul li a:hover,
+.extra-header-links ul li a.active {
     color: var(--gold);
 }
 
@@ -592,6 +601,7 @@ ul {
     display: flex;
     color: var(--dark);
     font-size: 14px;
+    font-weight: 500;
 }
 
 
@@ -1512,7 +1522,7 @@ p.about-address md-icon {
     display: flex;
     align-items: center;
     gap: 14px;
-    width: 70%;
+    width: 80%;
     justify-content: space-between;
     position: relative;
 }
@@ -3795,6 +3805,11 @@ section.doctor-inner-banner {
     border-radius: 11px 11px 0 0;
 }
 
+.faq-item.active {
+    border-color: var(--gold);
+    box-shadow: 0 2px 9px rgba(0, 0, 0, .15);
+}
+
 .faq-icon {
     width: 20px;
     height: 20px;
@@ -3823,6 +3838,7 @@ section.doctor-inner-banner {
 
 .faq-item.active .faq-icon {
     transform: rotate(45deg);
+    color: var(--gold);
 }
 
 .feature-item {
@@ -4116,7 +4132,7 @@ section.doctor-inner-banner {
 }
 
 .ayuvedic-tratmenmts {
-    background-color: #FBF9F4;
+    /* background-color: #FBF9F4; */
 }
 
 .ayuvedic-tratmenmts .feature-icon {
@@ -5924,4 +5940,285 @@ section.doctor-inner-banner {
 
 .appointment-dialog-content {
     gap: 0 !important;
+}
+/* Videos */
+.vp-videos-page {
+    padding: 35px 0 70px;
+}
+
+.vp-video-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.vp-video-tab {
+    border: 1px solid #d7e5e4;
+    background: #fff;
+    color: #24353d;
+    padding: 11px 22px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .25s ease;
+}
+
+.vp-video-tab:hover,
+.vp-video-tab.active {
+    background: var(--dark);
+    border-color: var(--green);
+    color: #fff;
+}
+
+.vp-video-page-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.vp-video-card {
+    position: relative;
+    display: block;
+    background: #fff;
+    border: 1px solid #e1e9e8;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform .25s ease,
+                box-shadow .25s ease;
+}
+
+.vp-video-card:hover {
+   box-shadow: 0 2px 9px rgba(0, 0, 0, .15);
+    transform: translateY(-3px);
+    border-color: var(--green);
+}
+.vp-video-card:hover .vp-video-category {
+    background: var(--green);
+   box-shadow: 0 2px 9px rgba(0, 0, 0, .15);
+    color: var(--white);
+}
+.vp-video-card:hover .vp-video-link {
+    color: var(--green);
+}
+.vp-video-card:hover .vp-video-play {
+    color: var(--green);
+}
+
+.vp-video-thumb {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #edf6f5;
+}
+
+.vp-video-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.vp-video-play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 52px;
+    height: 52px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .95);
+    color: #078b88;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, .18);
+}
+
+.vp-video-play .material-symbols-outlined {
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    list-style: 30px;
+}
+
+.vp-video-content {
+    position: relative;
+    padding: 12px;
+}
+
+.vp-video-content h3 {
+    margin: 0 0 10px;
+    color: #172c3b;
+    line-height: 1.4;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.vp-video-category {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: #eaf7f5;
+    color: #087f83;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.vp-video-link {
+    position: absolute;
+    right: 17px;
+    bottom: 19px;
+    color: #078b88;
+    font-size: 20px;
+    line-height: 20px;
+    height: 20px;
+    width: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pr-page {
+    padding: 35px 0 70px;
+}
+ 
+
+.pr-intro {
+    margin-bottom: 55px;
+}
+
+.pr-intro-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ 
+.pr-stories-section {
+    margin-bottom: 60px;
+    border: solid 1px var(--cream);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.pr-section-heading {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.pr-stories-placeholder {
+    /* padding: 24px 18px;
+    text-align: center;
+    background: var(--white);
+    border: 1px solid var(--grey);
+    border-radius: 12px; */
+}
+
+.pr-placeholder-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #087f83;
+    color: var(--white);
+}
+ 
+.pr-video-content {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: #fff;
+    border: 1px solid #e1e9e8;
+    border-radius: 12px;
+}
+
+.pr-video-icon {
+    flex: 0 0 60px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #eaf7f5;
+    color: #078b88;
+}
+
+.pr-video-icon .material-symbols-outlined {
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.pr-video-text {
+    flex: 1;
+}
+
+.pr-video-text h3 {
+    margin: 0 0 4px;
+    color: #172c3b;
+    font-size: 18px;
+}
+
+.pr-video-text p {
+    margin: 0;
+    color: var(--black);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.patient-recovery-stories .two-col {
+    grid-template-columns: 1.3fr .70fr;
+    padding: 24px 18px;
+    text-align: center;
+    background: var(--white);
+    border: 1px solid var(--grey);
+    border-radius: 12px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+ 
+
+@media (max-width: 767px) {
+    .pr-page {
+        padding: 25px 0 50px;
+    } 
+
+    .pr-video-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px;
+    }
 }
