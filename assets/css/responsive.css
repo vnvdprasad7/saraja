@@ -498,6 +498,10 @@
     .appointment-dialog-content-form .btn-primary {
         width: calc(100% - 20px);
     }
+      .vp-video-page-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 16px;
+    }
 }
 
 @media(max-width: 767px) {
@@ -1341,6 +1345,33 @@
     }
     .gallery-slider-items {
         text-align: center;
+    }
+     .vp-videos-page {
+        padding: 25px 0 50px;
+    }
+
+    .vp-video-page-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .vp-video-tabs {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        margin-bottom: 18px;
+    }
+
+    .vp-video-tab {
+        white-space: nowrap;
+    }
+    .patient-recovery-stories .two-col {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        max-width: 100%;
+    }
+    .our-appointment-form {
+        padding: 0;
     }
 }
 @media(max-width: 590px) {
